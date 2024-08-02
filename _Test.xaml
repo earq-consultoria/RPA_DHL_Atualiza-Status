@@ -1,0 +1,876 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="_Test" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <x:Members>
+    <x:Property Name="in_Config" Type="InArgument(scg:Dictionary(x:String, x:Object))" />
+  </x:Members>
+  <VisualBasic.Settings>
+    <x:Null />
+  </VisualBasic.Settings>
+  <sap:VirtualizedContainerService.HintSize>530,1421</sap:VirtualizedContainerService.HintSize>
+  <sap2010:WorkflowViewState.IdRef>_Test_1</sap2010:WorkflowViewState.IdRef>
+  <TextExpression.NamespacesForImplementation>
+    <scg:List x:TypeArguments="x:String" Capacity="46">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>System.IO.Compression</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+    </scg:List>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <scg:List x:TypeArguments="AssemblyReference" Capacity="68">
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Composition</AssemblyReference>
+      <AssemblyReference>System.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>System.ValueTuple</AssemblyReference>
+      <AssemblyReference>UiPath.Java.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.ViewModels</AssemblyReference>
+      <AssemblyReference>UiPath.Workflow</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.CodeDom</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic.Forms</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic.Core</AssemblyReference>
+      <AssemblyReference>System.Linq.Expressions</AssemblyReference>
+      <AssemblyReference>System.Linq.Parallel</AssemblyReference>
+      <AssemblyReference>System.Collections.Immutable</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Linq.Queryable</AssemblyReference>
+    </scg:List>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence sap:VirtualizedContainerService.HintSize="540,1356" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="x:Boolean" Name="isPesquisaCarregada" />
+      <Variable x:TypeArguments="x:String" Name="SCTASK" />
+      <Variable x:TypeArguments="x:String" Name="isTaskReadOnly" />
+      <Variable x:TypeArguments="x:String" Name="statusSelecionado" />
+      <Variable x:TypeArguments="x:String" Name="statusRequestIt" />
+      <Variable x:TypeArguments="x:String" Name="internalWorkingNotesExistingText" />
+      <Variable x:TypeArguments="x:String" Name="externalWorkingNotesExistingText" />
+      <Variable x:TypeArguments="x:Boolean" Name="sinalAtualizacao" />
+      <Variable x:TypeArguments="x:String" Name="status" />
+      <Variable x:TypeArguments="x:String" Name="mensagemAtualizacao" />
+      <Variable x:TypeArguments="x:Boolean" Name="popUpConfirmacao" />
+      <Variable x:TypeArguments="x:Boolean" Name="searchResult" />
+      <Variable x:TypeArguments="x:Boolean" Name="popUpUpload" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <ui:CommentOut DisplayName="Início até Atualização de Status (Testado)" sap:VirtualizedContainerService.HintSize="478,52" sap2010:WorkflowViewState.IdRef="CommentOut_14">
+      <ui:CommentOut.Body>
+        <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="636,4335" sap2010:WorkflowViewState.IdRef="Sequence_29">
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+          <ui:OpenBrowser AutomaticallyDownloadWebDriver="{x:Null}" CommunicationMethod="{x:Null}" Hidden="{x:Null}" NewSession="{x:Null}" Private="{x:Null}" UiBrowser="{x:Null}" BrowserType="Chrome" DisplayName="Início até Atualização de Status" sap:VirtualizedContainerService.HintSize="574,4224" sap2010:WorkflowViewState.IdRef="OpenBrowser_7" Url="https://servicenow-test.dhl.com">
+            <ui:OpenBrowser.Body>
+              <ActivityAction x:TypeArguments="x:Object">
+                <ActivityAction.Argument>
+                  <DelegateInArgument x:TypeArguments="x:Object" Name="ContextTarget" />
+                </ActivityAction.Argument>
+                <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="540,4099" sap2010:WorkflowViewState.IdRef="Sequence_10">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <Delay Duration="00:00:05" sap:VirtualizedContainerService.HintSize="478,90" sap2010:WorkflowViewState.IdRef="Delay_3" />
+                  <ui:UiElementExists DisplayName="Element Exists search" Exists="[isPesquisaCarregada]" sap:VirtualizedContainerService.HintSize="478,107" sap2010:WorkflowViewState.IdRef="UiElementExists_6">
+                    <ui:UiElementExists.Target>
+                      <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="c55d4806-ffeb-4ec6-a4b3-5e4094a428c2" InformativeScreenshot="c6f1bb7bc1609d8f3aaaaa1bb5d18f22" Selector="&lt;webctrl tag='MACROPONENT*' /&gt;&lt;webctrl shadowhostid='' tag='SN-POLARIS-LAYOUT' /&gt;&lt;webctrl shadowhostid='' tag='SN-POLARIS-HEADER' /&gt;&lt;webctrl shadowhostid='' tag='SN-SEARCH-INPUT-WRAPPER' /&gt;&lt;webctrl shadowhostid='' tag='SN-COMPONENT-WORKSPACE-GLOBAL-SEARCH-TYPEAHEAD' /&gt;&lt;webctrl id='sncwsgs-typeahead-input' shadowhostid='' tag='INPUT' /&gt;" TimeoutMS="10000" WaitForReady="COMPLETE" />
+                    </ui:UiElementExists.Target>
+                  </ui:UiElementExists>
+                  <If Condition="[isPesquisaCarregada]" DisplayName="Se o input de pesquisa tiver carregado" sap:VirtualizedContainerService.HintSize="478,1038" sap2010:WorkflowViewState.IdRef="If_9">
+                    <If.Then>
+                      <Sequence sap:VirtualizedContainerService.HintSize="400,721" sap2010:WorkflowViewState.IdRef="Sequence_8">
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                        <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="338,141" sap2010:WorkflowViewState.IdRef="LogMessage_8" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[&quot;Input de Pesquisa Carregou&quot;]" />
+                        <Assign sap:VirtualizedContainerService.HintSize="338,61" sap2010:WorkflowViewState.IdRef="Assign_1">
+                          <Assign.To>
+                            <OutArgument x:TypeArguments="x:String">[SCTASK]</OutArgument>
+                          </Assign.To>
+                          <Assign.Value>
+                            <InArgument x:TypeArguments="x:String">SCTASK3832925</InArgument>
+                          </Assign.Value>
+                        </Assign>
+                        <ui:TypeInto ClickBeforeTyping="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SimulateType="{x:Null}" Activate="True" AlterIfDisabled="True" DelayBefore="15000" DisplayName="Type Into search" sap:VirtualizedContainerService.HintSize="338,155" sap2010:WorkflowViewState.IdRef="TypeInto_3" SendWindowMessages="True" Text="[SCTASK]">
+                          <ui:TypeInto.Target>
+                            <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="dbeb2012-575e-499a-8133-9e9286abfeb7" InformativeScreenshot="0b549c7bee52a3cb05f39aeb6ed7926d" Selector="&lt;webctrl tag='MACROPONENT*' /&gt;&lt;webctrl shadowhostid='' tag='SN-POLARIS-LAYOUT' /&gt;&lt;webctrl shadowhostid='' tag='SN-POLARIS-HEADER' /&gt;&lt;webctrl shadowhostid='' tag='SN-SEARCH-INPUT-WRAPPER' /&gt;&lt;webctrl shadowhostid='' tag='SN-COMPONENT-WORKSPACE-GLOBAL-SEARCH-TYPEAHEAD' /&gt;&lt;webctrl id='sncwsgs-typeahead-input' shadowhostid='' tag='INPUT' /&gt;" WaitForReady="COMPLETE">
+                              <ui:Target.TimeoutMS>
+                                <InArgument x:TypeArguments="x:Int32" />
+                              </ui:Target.TimeoutMS>
+                            </ui:Target>
+                          </ui:TypeInto.Target>
+                        </ui:TypeInto>
+                        <ui:SendHotkey ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SpecialKey="{x:Null}" Activate="True" DisplayName="Send Hotkey" sap:VirtualizedContainerService.HintSize="338,133" sap2010:WorkflowViewState.IdRef="SendHotkey_3" Key="enter" KeyModifiers="None" SendWindowMessages="True">
+                          <ui:SendHotkey.Target>
+                            <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="387d6b44-17d2-4230-844a-efdad9f065e2" Selector="&lt;webctrl tag='MACROPONENT*' /&gt;&lt;webctrl shadowhostid='' tag='SN-POLARIS-LAYOUT' /&gt;&lt;webctrl shadowhostid='' tag='SN-POLARIS-HEADER' /&gt;&lt;webctrl shadowhostid='' tag='SN-SEARCH-INPUT-WRAPPER' /&gt;&lt;webctrl shadowhostid='' tag='SN-COMPONENT-WORKSPACE-GLOBAL-SEARCH-TYPEAHEAD' /&gt;&lt;webctrl id='sncwsgs-typeahead-input' shadowhostid='' tag='INPUT' /&gt;">
+                              <ui:Target.TimeoutMS>
+                                <InArgument x:TypeArguments="x:Int32" />
+                              </ui:Target.TimeoutMS>
+                              <ui:Target.WaitForReady>
+                                <InArgument x:TypeArguments="ui:WaitForReady" />
+                              </ui:Target.WaitForReady>
+                            </ui:Target>
+                          </ui:SendHotkey.Target>
+                        </ui:SendHotkey>
+                      </Sequence>
+                    </If.Then>
+                    <If.Else>
+                      <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="334,141" sap2010:WorkflowViewState.IdRef="LogMessage_9" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[&quot;Input de Pesquisa não Carregou&quot;]" />
+                    </If.Else>
+                  </If>
+                  <ui:UiElementExists DisplayName="Element Exists 'chrome.exe Search Results'" Exists="[searchResult]" sap:VirtualizedContainerService.HintSize="478,107" sap2010:WorkflowViewState.IdRef="UiElementExists_5">
+                    <ui:UiElementExists.Target>
+                      <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="3accecc4-4474-4c68-b2a8-5e6096cfea72" InformativeScreenshot="193086331cc04420845383f54724fbb2" Selector="&lt;wnd app='chrome.exe' cls='Chrome_WidgetWin_1' title='Search Results |*| ServiceNow - Google Chrome' /&gt;&lt;ctrl name='Search Results |*| ServiceNow' role='document' /&gt;&lt;ctrl name='Screen content' role='grouping' /&gt;&lt;ctrl name='* results for &amp;quot;*&amp;quot;' role='grouping' /&gt;" TimeoutMS="1000" WaitForReady="COMPLETE" />
+                    </ui:UiElementExists.Target>
+                  </ui:UiElementExists>
+                  <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="478,141" sap2010:WorkflowViewState.IdRef="LogMessage_24" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[&quot;Search Results existe?&quot; + searchResult.ToString]" />
+                  <If Condition="[searchResult = True]" DisplayName="Caso não retorne o SCTASK, clica na lista" sap:VirtualizedContainerService.HintSize="478,494" sap2010:WorkflowViewState.IdRef="If_8">
+                    <If.Then>
+                      <Sequence sap:VirtualizedContainerService.HintSize="400,218" sap2010:WorkflowViewState.IdRef="Sequence_24">
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                        <ui:Click DelayBefore="{x:Null}" DelayMS="{x:Null}" SimulateClick="{x:Null}" AlterIfDisabled="True" ClickType="CLICK_SINGLE" DisplayName="Click 'Lista de resultados'" sap:VirtualizedContainerService.HintSize="338,107" sap2010:WorkflowViewState.IdRef="Click_8" KeyModifiers="None" MouseButton="BTN_LEFT" SendWindowMessages="True">
+                          <ui:Click.CursorPosition>
+                            <ui:CursorPosition Position="Center">
+                              <ui:CursorPosition.OffsetX>
+                                <InArgument x:TypeArguments="x:Int32" />
+                              </ui:CursorPosition.OffsetX>
+                              <ui:CursorPosition.OffsetY>
+                                <InArgument x:TypeArguments="x:Int32" />
+                              </ui:CursorPosition.OffsetY>
+                            </ui:CursorPosition>
+                          </ui:Click.CursorPosition>
+                          <ui:Click.Target>
+                            <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="94418ef1-c056-4f40-8ff3-eda5df357920" InformativeScreenshot="96b2cb1b81bec13bb141a1b6b557999f" Selector="&lt;wnd app='chrome.exe' cls='Chrome_WidgetWin_1' title='Search Results |*| ServiceNow - Google Chrome' /&gt;&lt;ctrl name='Search Results |*| ServiceNow' role='document' /&gt;&lt;ctrl name='Screen content' role='grouping' /&gt;&lt;ctrl omit:name='Exact Match (1 of 1)' role='list' /&gt;&lt;ctrl name='BR/DSC/Data Entry - Serviço Open in new tab Number *' role='list item' /&gt;&lt;ctrl name='*' role='grouping' /&gt;" WaitForReady="COMPLETE">
+                              <ui:Target.TimeoutMS>
+                                <InArgument x:TypeArguments="x:Int32" />
+                              </ui:Target.TimeoutMS>
+                            </ui:Target>
+                          </ui:Click.Target>
+                        </ui:Click>
+                      </Sequence>
+                    </If.Then>
+                  </If>
+                  <ui:GetAttribute ContinueOnError="{x:Null}" sap2010:Annotation.AnnotationText="Captura o valor que está no atributo aria-readonly do combobox. Se for diferente de null ou vazio então a task está em um status na qual não pode ser alterada." Attribute="aastate" DisplayName="Get Attribute aria-readonly (aastate)" sap:VirtualizedContainerService.HintSize="478,260" sap2010:WorkflowViewState.IdRef="GetAttribute_1">
+                    <ui:GetAttribute.Result>
+                      <OutArgument x:TypeArguments="x:String">[isTaskReadOnly]</OutArgument>
+                    </ui:GetAttribute.Result>
+                    <ui:GetAttribute.Target>
+                      <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="95bf7861-c69f-472c-837d-a4c8aa376995" InformativeScreenshot="38811af7462cef8a74c58020e28284a9" Selector="&lt;wnd app='chrome.exe' cls='Chrome_WidgetWin_1' title='*| Catalog Task | ServiceNow - Google Chrome' /&gt;&lt;ctrl name='*| Catalog Task | ServiceNow' role='document' /&gt;&lt;ctrl name='Main Content' role='document' /&gt;&lt;ctrl name='*| Catalog Task | ServiceNow' role='document' /&gt;&lt;ctrl name='Catalog Task form section' role='pane' /&gt;&lt;ctrl name='State' role='combo box' aastate='collapsed, focusable, has popup, opaque' /&gt;">
+                        <ui:Target.TimeoutMS>
+                          <InArgument x:TypeArguments="x:Int32" />
+                        </ui:Target.TimeoutMS>
+                        <ui:Target.WaitForReady>
+                          <InArgument x:TypeArguments="ui:WaitForReady" />
+                        </ui:Target.WaitForReady>
+                      </ui:Target>
+                    </ui:GetAttribute.Target>
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                  </ui:GetAttribute>
+                  <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="478,141" sap2010:WorkflowViewState.IdRef="LogMessage_10" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[&quot;Atributos capturados no aastate: &quot; + isTaskReadOnly]" />
+                  <If Condition="[Not isTaskReadOnly.Contains(&quot;unavailable&quot;)]" DisplayName="O aria-readonly está vazio? (aastate contém unavailable?)" sap:VirtualizedContainerService.HintSize="478,941" sap2010:WorkflowViewState.IdRef="If_5">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <If.Then>
+                      <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="334,141" sap2010:WorkflowViewState.IdRef="LogMessage_12" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[&quot;Fluxo não entrou no Else, não contém o texto 'unavailable' no 'aastate', variável 'isTaskReadOnly': &quot; + isTaskReadOnly]" />
+                    </If.Then>
+                    <If.Else>
+                      <Sequence sap2010:Annotation.AnnotationText="Caso o chamado esteja em um status que não permita atualização, atualiza a flag de STATUSREQUESTIT para 1 no PPD, para impedir que o mesmo processo fique repetidamente sendo enviado para o robo tentar atualizar.&#xA;" DisplayName="Status não permite alteração" sap:VirtualizedContainerService.HintSize="400,624" sap2010:WorkflowViewState.IdRef="Sequence_11">
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                        <ui:GetAttribute ContinueOnError="{x:Null}" sap2010:Annotation.AnnotationText="Captura o valor que está no atributo selecteditem do combobox." Attribute="selecteditem" DisplayName="Get Attribute aria-readonly (selecteditem)" sap:VirtualizedContainerService.HintSize="338,245" sap2010:WorkflowViewState.IdRef="GetAttribute_2">
+                          <ui:GetAttribute.Result>
+                            <OutArgument x:TypeArguments="x:String">[statusSelecionado]</OutArgument>
+                          </ui:GetAttribute.Result>
+                          <ui:GetAttribute.Target>
+                            <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="95bf7861-c69f-472c-837d-a4c8aa376995" InformativeScreenshot="38811af7462cef8a74c58020e28284a9" Selector="&lt;wnd app='chrome.exe' omit:cls='Chrome_WidgetWin_1' title='*| Catalog Task | ServiceNow - Google Chrome' /&gt;&lt;ctrl omit:name='*| Catalog Task | ServiceNow' role='document' /&gt;&lt;ctrl omit:name='Main Content' role='document' /&gt;&lt;ctrl omit:name='*| Catalog Task | ServiceNow' role='document' /&gt;&lt;ctrl omit:name='Catalog Task form section' role='pane' /&gt;&lt;ctrl omit:name='State' role='combo box' /&gt;">
+                              <ui:Target.TimeoutMS>
+                                <InArgument x:TypeArguments="x:Int32" />
+                              </ui:Target.TimeoutMS>
+                              <ui:Target.WaitForReady>
+                                <InArgument x:TypeArguments="ui:WaitForReady" />
+                              </ui:Target.WaitForReady>
+                            </ui:Target>
+                          </ui:GetAttribute.Target>
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                        </ui:GetAttribute>
+                        <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="338,141" sap2010:WorkflowViewState.IdRef="LogMessage_6" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[&quot;O status da tarefa: &quot; + statusSelecionado + &quot;, não permite atualização, STATUSREQUESTIT alterado para locked.&quot;]" />
+                      </Sequence>
+                    </If.Else>
+                  </If>
+                  <Assign sap:VirtualizedContainerService.HintSize="478,61" sap2010:WorkflowViewState.IdRef="Assign_7">
+                    <Assign.To>
+                      <OutArgument x:TypeArguments="x:String">[statusRequestIt]</OutArgument>
+                    </Assign.To>
+                    <Assign.Value>
+                      <InArgument x:TypeArguments="x:String">New</InArgument>
+                    </Assign.Value>
+                  </Assign>
+                  <ui:SetWebAttribute ContinueOnError="{x:Null}" DelayAfter="{x:Null}" DelayBefore="{x:Null}" Attribute="selecteditem" DisplayName="Set status" sap:VirtualizedContainerService.HintSize="478,208" sap2010:WorkflowViewState.IdRef="SetWebAttribute_1" Value="[statusRequestIt]">
+                    <ui:SetWebAttribute.Target>
+                      <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="10c9ad12-ea6b-4be4-bfb4-ce0d968b37db" InformativeScreenshot="8eb338c21fdb2e8b1b63a88ca4f7cbbe" Selector="&lt;wnd app='chrome.exe' omit:cls='Chrome_WidgetWin_1' title='*| Catalog Task | ServiceNow - Google Chrome' /&gt;&lt;ctrl omit:name='*| Catalog Task | ServiceNow' role='document' /&gt;&lt;ctrl omit:name='Main Content' role='document' /&gt;&lt;ctrl omit:name='*| Catalog Task | ServiceNow' role='document' /&gt;&lt;ctrl omit:name='Catalog Task form section' role='pane' /&gt;&lt;ctrl omit:name='State' role='combo box' /&gt;" TimeoutMS="5" WaitForReady="COMPLETE" />
+                    </ui:SetWebAttribute.Target>
+                  </ui:SetWebAttribute>
+                </Sequence>
+              </ActivityAction>
+            </ui:OpenBrowser.Body>
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+          </ui:OpenBrowser>
+        </Sequence>
+      </ui:CommentOut.Body>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </ui:CommentOut>
+    <ui:CommentOut DisplayName="Upload de Arquivo (Testado)" sap:VirtualizedContainerService.HintSize="478,52" sap2010:WorkflowViewState.IdRef="CommentOut_15">
+      <ui:CommentOut.Body>
+        <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="573,2226" sap2010:WorkflowViewState.IdRef="Sequence_30">
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+          <ui:OpenBrowser AutomaticallyDownloadWebDriver="{x:Null}" CommunicationMethod="{x:Null}" Hidden="{x:Null}" Private="{x:Null}" UiBrowser="{x:Null}" BrowserType="Chrome" DisplayName="Upload de Arquivo (Testado)" sap:VirtualizedContainerService.HintSize="467,2115" sap2010:WorkflowViewState.IdRef="OpenBrowser_8" NewSession="True" Url="https://servicenow-test.dhl.com/">
+            <ui:OpenBrowser.Body>
+              <ActivityAction x:TypeArguments="x:Object">
+                <ActivityAction.Argument>
+                  <DelegateInArgument x:TypeArguments="x:Object" Name="ContextTarget" />
+                </ActivityAction.Argument>
+                <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="400,1990" sap2010:WorkflowViewState.IdRef="Sequence_13">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <Delay Duration="00:00:05" sap:VirtualizedContainerService.HintSize="338,90" sap2010:WorkflowViewState.IdRef="Delay_5" />
+                  <Assign sap:VirtualizedContainerService.HintSize="338,61" sap2010:WorkflowViewState.IdRef="Assign_8">
+                    <Assign.To>
+                      <OutArgument x:TypeArguments="x:String">[SCTASK]</OutArgument>
+                    </Assign.To>
+                    <Assign.Value>
+                      <InArgument x:TypeArguments="x:String" xml:space="preserve">SCTASK3955513 </InArgument>
+                    </Assign.Value>
+                  </Assign>
+                  <ui:TypeInto ClickBeforeTyping="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SimulateType="{x:Null}" Activate="True" AlterIfDisabled="True" DelayBefore="15000" DisplayName="Type Into search" sap:VirtualizedContainerService.HintSize="338,155" sap2010:WorkflowViewState.IdRef="TypeInto_9" SendWindowMessages="True" Text="[SCTASK]">
+                    <ui:TypeInto.Target>
+                      <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="dbeb2012-575e-499a-8133-9e9286abfeb7" InformativeScreenshot="0b549c7bee52a3cb05f39aeb6ed7926d" Selector="&lt;webctrl tag='MACROPONENT*' /&gt;&lt;webctrl shadowhostid='' tag='SN-POLARIS-LAYOUT' /&gt;&lt;webctrl shadowhostid='' tag='SN-POLARIS-HEADER' /&gt;&lt;webctrl shadowhostid='' tag='SN-SEARCH-INPUT-WRAPPER' /&gt;&lt;webctrl shadowhostid='' tag='SN-COMPONENT-WORKSPACE-GLOBAL-SEARCH-TYPEAHEAD' /&gt;&lt;webctrl id='sncwsgs-typeahead-input' shadowhostid='' tag='INPUT' /&gt;" WaitForReady="COMPLETE">
+                        <ui:Target.TimeoutMS>
+                          <InArgument x:TypeArguments="x:Int32" />
+                        </ui:Target.TimeoutMS>
+                      </ui:Target>
+                    </ui:TypeInto.Target>
+                  </ui:TypeInto>
+                  <ui:SendHotkey ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" Activate="True" DisplayName="Send Hotkey" sap:VirtualizedContainerService.HintSize="338,133" sap2010:WorkflowViewState.IdRef="SendHotkey_7" Key="enter" KeyModifiers="None" SpecialKey="True">
+                    <ui:SendHotkey.Target>
+                      <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="387d6b44-17d2-4230-844a-efdad9f065e2" Selector="&lt;webctrl tag='MACROPONENT*' /&gt;&lt;webctrl shadowhostid='' tag='SN-POLARIS-LAYOUT' /&gt;&lt;webctrl shadowhostid='' tag='SN-POLARIS-HEADER' /&gt;&lt;webctrl shadowhostid='' tag='SN-SEARCH-INPUT-WRAPPER' /&gt;&lt;webctrl shadowhostid='' tag='SN-COMPONENT-WORKSPACE-GLOBAL-SEARCH-TYPEAHEAD' /&gt;&lt;webctrl id='sncwsgs-typeahead-input' shadowhostid='' tag='INPUT' /&gt;">
+                        <ui:Target.TimeoutMS>
+                          <InArgument x:TypeArguments="x:Int32" />
+                        </ui:Target.TimeoutMS>
+                        <ui:Target.WaitForReady>
+                          <InArgument x:TypeArguments="ui:WaitForReady" />
+                        </ui:Target.WaitForReady>
+                      </ui:Target>
+                    </ui:SendHotkey.Target>
+                  </ui:SendHotkey>
+                  <ui:Click DelayBefore="{x:Null}" DelayMS="{x:Null}" SimulateClick="{x:Null}" AlterIfDisabled="True" ClickType="CLICK_SINGLE" DisplayName="Click 'LI'" sap:VirtualizedContainerService.HintSize="338,107" sap2010:WorkflowViewState.IdRef="Click_1" KeyModifiers="None" MouseButton="BTN_LEFT" SendWindowMessages="True">
+                    <ui:Click.CursorPosition>
+                      <ui:CursorPosition Position="Center">
+                        <ui:CursorPosition.OffsetX>
+                          <InArgument x:TypeArguments="x:Int32" />
+                        </ui:CursorPosition.OffsetX>
+                        <ui:CursorPosition.OffsetY>
+                          <InArgument x:TypeArguments="x:Int32" />
+                        </ui:CursorPosition.OffsetY>
+                      </ui:CursorPosition>
+                    </ui:Click.CursorPosition>
+                    <ui:Click.Target>
+                      <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="94418ef1-c056-4f40-8ff3-eda5df357920" InformativeScreenshot="651ec8e4ce775ae8809fe5d03559ef3c" Selector="&lt;wnd app='chrome.exe' omit:cls='Chrome_WidgetWin_1' title='*| Catalog Task | ServiceNow - Google Chrome' /&gt;&lt;ctrl omit:name='*| Catalog Task | ServiceNow' role='document' /&gt;&lt;ctrl omit:name='Main Content' role='document' /&gt;&lt;ctrl omit:name='*| Catalog Task | ServiceNow' role='document' /&gt;&lt;ctrl name='Manage Attachments*:' role='link' /&gt;" TimeoutMS="1000" WaitForReady="COMPLETE" />
+                    </ui:Click.Target>
+                  </ui:Click>
+                  <ui:Click SimulateClick="{x:Null}" AlterIfDisabled="True" ClickType="CLICK_SINGLE" DelayBefore="1000" DelayMS="1000" DisplayName="Click 'INPUT  attachFile'" sap:VirtualizedContainerService.HintSize="338,107" sap2010:WorkflowViewState.IdRef="Click_2" KeyModifiers="None" MouseButton="BTN_LEFT" SendWindowMessages="True">
+                    <ui:Click.CursorPosition>
+                      <ui:CursorPosition Position="Center">
+                        <ui:CursorPosition.OffsetX>
+                          <InArgument x:TypeArguments="x:Int32" />
+                        </ui:CursorPosition.OffsetX>
+                        <ui:CursorPosition.OffsetY>
+                          <InArgument x:TypeArguments="x:Int32" />
+                        </ui:CursorPosition.OffsetY>
+                      </ui:CursorPosition>
+                    </ui:Click.CursorPosition>
+                    <ui:Click.Target>
+                      <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="cee0dd54-c5f0-4485-9021-7fbb769aea43" InformativeScreenshot="c66213b46d87ddb4504ead404a530619" Selector="&lt;wnd app='chrome.exe' omit:cls='Chrome_WidgetWin_1' title='*| Catalog Task | ServiceNow - Google Chrome' /&gt;&lt;ctrl omit:name='SCTASK3953170 | Catalog Task | ServiceNow' role='document' /&gt;&lt;ctrl omit:name='Main Content' role='document' /&gt;&lt;ctrl omit:name='SCTASK3953170 | Catalog Task | ServiceNow' role='document' /&gt;&lt;ctrl idx='2' role='row' /&gt;&lt;ctrl omit:name='Choose Files: No file chosen Attach Add Another Attachment' role='cell' /&gt;&lt;ctrl role='row' /&gt;&lt;ctrl omit:name='Choose Files: No file chosen' role='cell' /&gt;&lt;ctrl omit:name='Choose Files: No file chosen' role='push button' /&gt;&lt;ctrl omit:name='Choose Files' role='push button' /&gt;" TimeoutMS="3000" WaitForReady="COMPLETE" />
+                    </ui:Click.Target>
+                  </ui:Click>
+                  <Delay Duration="00:00:05" sap:VirtualizedContainerService.HintSize="338,90" sap2010:WorkflowViewState.IdRef="Delay_8" />
+                  <ui:TypeInto ClickBeforeTyping="{x:Null}" DelayBetweenKeys="{x:Null}" EmptyField="{x:Null}" SimulateType="{x:Null}" Activate="True" AlterIfDisabled="True" DelayBefore="1000" DelayMS="1000" DisplayName="Type Into 'Edit'" sap:VirtualizedContainerService.HintSize="338,155" sap2010:WorkflowViewState.IdRef="TypeInto_4" SendWindowMessages="True" Text="C:\Users\bballero\Downloads\Teste.txt">
+                    <ui:TypeInto.Target>
+                      <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="800dd636-53c1-4155-9879-776803e979a9" InformativeScreenshot="12d343dd786c22c0c03b52b324b25e56" Selector="&lt;wnd app='chrome.exe' cls='#32770' title='Open' /&gt;&lt;wnd ctrlid='1148' /&gt;&lt;wnd ctrlid='1148' /&gt;&lt;wnd ctrlid='1148' /&gt;" TimeoutMS="1000" WaitForReady="COMPLETE" />
+                    </ui:TypeInto.Target>
+                  </ui:TypeInto>
+                  <ui:Click SimulateClick="{x:Null}" AlterIfDisabled="True" ClickType="CLICK_SINGLE" DelayBefore="1000" DelayMS="1000" DisplayName="Click 'Button'" sap:VirtualizedContainerService.HintSize="338,107" sap2010:WorkflowViewState.IdRef="Click_3" KeyModifiers="None" MouseButton="BTN_LEFT" SendWindowMessages="True">
+                    <ui:Click.CursorPosition>
+                      <ui:CursorPosition Position="Center">
+                        <ui:CursorPosition.OffsetX>
+                          <InArgument x:TypeArguments="x:Int32" />
+                        </ui:CursorPosition.OffsetX>
+                        <ui:CursorPosition.OffsetY>
+                          <InArgument x:TypeArguments="x:Int32" />
+                        </ui:CursorPosition.OffsetY>
+                      </ui:CursorPosition>
+                    </ui:Click.CursorPosition>
+                    <ui:Click.Target>
+                      <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="35453557-2bef-4b8d-b858-076d58a8dc83" InformativeScreenshot="b41314285a97f783c899a24df67bd60b" Selector="&lt;wnd app='chrome.exe' cls='#32770' title='Open' /&gt;&lt;wnd ctrlid='1' title='&amp;amp;Open' /&gt;" TimeoutMS="1000" WaitForReady="COMPLETE" />
+                    </ui:Click.Target>
+                  </ui:Click>
+                  <Delay Duration="00:00:05" sap:VirtualizedContainerService.HintSize="338,90" sap2010:WorkflowViewState.IdRef="Delay_10" />
+                  <ui:Click DelayMS="{x:Null}" SimulateClick="{x:Null}" AlterIfDisabled="True" ClickType="CLICK_SINGLE" DelayBefore="3000" DisplayName="Click 'INPUT  attachButton'" sap:VirtualizedContainerService.HintSize="338,107" sap2010:WorkflowViewState.IdRef="Click_4" KeyModifiers="None" MouseButton="BTN_LEFT" SendWindowMessages="True">
+                    <ui:Click.CursorPosition>
+                      <ui:CursorPosition Position="Center">
+                        <ui:CursorPosition.OffsetX>
+                          <InArgument x:TypeArguments="x:Int32" />
+                        </ui:CursorPosition.OffsetX>
+                        <ui:CursorPosition.OffsetY>
+                          <InArgument x:TypeArguments="x:Int32" />
+                        </ui:CursorPosition.OffsetY>
+                      </ui:CursorPosition>
+                    </ui:Click.CursorPosition>
+                    <ui:Click.Target>
+                      <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="82e4a94e-db54-4552-ac3c-d06f96770d6b" InformativeScreenshot="141eeafd1b110e6bc56a7ba98cf91ef0" Selector="&lt;wnd app='chrome.exe' omit:cls='Chrome_WidgetWin_1' title='*| Catalog Task | ServiceNow - Google Chrome' /&gt;&lt;ctrl omit:name='*| Catalog Task | ServiceNow' role='document' /&gt;&lt;ctrl omit:name='Main Content' role='document' /&gt;&lt;ctrl omit:name='*| Catalog Task | ServiceNow' role='document' /&gt;&lt;ctrl idx='2' role='row' /&gt;&lt;ctrl omit:name='Choose Files: No file chosen Attach Add Another Attachment' role='cell' /&gt;&lt;ctrl role='row' /&gt;&lt;ctrl name='Attach' role='cell' /&gt;&lt;ctrl name='Attach' role='push button' /&gt;" WaitForReady="COMPLETE">
+                        <ui:Target.TimeoutMS>
+                          <InArgument x:TypeArguments="x:Int32" />
+                        </ui:Target.TimeoutMS>
+                      </ui:Target>
+                    </ui:Click.Target>
+                  </ui:Click>
+                  <Delay Duration="00:00:10" sap:VirtualizedContainerService.HintSize="338,90" sap2010:WorkflowViewState.IdRef="Delay_9" />
+                  <ui:Click DelayBefore="{x:Null}" DelayMS="{x:Null}" SimulateClick="{x:Null}" AlterIfDisabled="True" ClickType="CLICK_SINGLE" DisplayName="Click 'BUTTON  attachment_clos...'" sap:VirtualizedContainerService.HintSize="338,107" sap2010:WorkflowViewState.IdRef="Click_5" KeyModifiers="None" MouseButton="BTN_LEFT" SendWindowMessages="True">
+                    <ui:Click.CursorPosition>
+                      <ui:CursorPosition Position="Center">
+                        <ui:CursorPosition.OffsetX>
+                          <InArgument x:TypeArguments="x:Int32" />
+                        </ui:CursorPosition.OffsetX>
+                        <ui:CursorPosition.OffsetY>
+                          <InArgument x:TypeArguments="x:Int32" />
+                        </ui:CursorPosition.OffsetY>
+                      </ui:CursorPosition>
+                    </ui:Click.CursorPosition>
+                    <ui:Click.Target>
+                      <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="d4aa6669-d7ef-4a30-850d-d49831b8feb3" InformativeScreenshot="915452ae32a840c0fd4cd4f8d84491ab" Selector="&lt;wnd app='chrome.exe' omit:cls='Chrome_WidgetWin_1' title='*| Catalog Task | ServiceNow - Google Chrome' /&gt;&lt;ctrl omit:name='*| Catalog Task | ServiceNow' role='document' /&gt;&lt;ctrl omit:name='Main Content' role='document' /&gt;&lt;ctrl omit:name='*| Catalog Task | ServiceNow' role='document' /&gt;&lt;ctrl omit:name='Attachments' role='grouping' /&gt;&lt;ctrl name='Close' role='push button' /&gt;&lt;ctrl role='grouping' /&gt;">
+                        <ui:Target.TimeoutMS>
+                          <InArgument x:TypeArguments="x:Int32" />
+                        </ui:Target.TimeoutMS>
+                        <ui:Target.WaitForReady>
+                          <InArgument x:TypeArguments="ui:WaitForReady" />
+                        </ui:Target.WaitForReady>
+                      </ui:Target>
+                    </ui:Click.Target>
+                  </ui:Click>
+                </Sequence>
+              </ActivityAction>
+            </ui:OpenBrowser.Body>
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+          </ui:OpenBrowser>
+        </Sequence>
+      </ui:CommentOut.Body>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </ui:CommentOut>
+    <ui:CommentOut DisplayName="Workingnotes e Mensagem de confirmação (Testado)" sap:VirtualizedContainerService.HintSize="478,52" sap2010:WorkflowViewState.IdRef="CommentOut_19">
+      <ui:CommentOut.Body>
+        <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="636,163" sap2010:WorkflowViewState.IdRef="Sequence_34">
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+          <ui:OpenBrowser AutomaticallyDownloadWebDriver="{x:Null}" CommunicationMethod="{x:Null}" Hidden="{x:Null}" NewSession="{x:Null}" Private="{x:Null}" UiBrowser="{x:Null}" BrowserType="Chrome" DisplayName="Workingnotes e Mensagem de confirmação (Testado)" sap:VirtualizedContainerService.HintSize="370,52" sap2010:WorkflowViewState.IdRef="OpenBrowser_9" Url="https://servicenow-test.dhl.com/">
+            <ui:OpenBrowser.Body>
+              <ActivityAction x:TypeArguments="x:Object">
+                <ActivityAction.Argument>
+                  <DelegateInArgument x:TypeArguments="x:Object" Name="ContextTarget" />
+                </ActivityAction.Argument>
+                <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="540,4488" sap2010:WorkflowViewState.IdRef="Sequence_16">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <Delay Duration="00:00:10" sap:VirtualizedContainerService.HintSize="478,90" sap2010:WorkflowViewState.IdRef="Delay_11" />
+                  <Assign sap:VirtualizedContainerService.HintSize="478,61" sap2010:WorkflowViewState.IdRef="Assign_9">
+                    <Assign.To>
+                      <OutArgument x:TypeArguments="x:String">[SCTASK]</OutArgument>
+                    </Assign.To>
+                    <Assign.Value>
+                      <InArgument x:TypeArguments="x:String">SCTASK3955510</InArgument>
+                    </Assign.Value>
+                  </Assign>
+                  <ui:TypeInto ClickBeforeTyping="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SimulateType="{x:Null}" Activate="True" AlterIfDisabled="True" DelayBefore="15000" DisplayName="Type Into search" sap:VirtualizedContainerService.HintSize="478,155" sap2010:WorkflowViewState.IdRef="TypeInto_10" SendWindowMessages="True" Text="[SCTASK]">
+                    <ui:TypeInto.Target>
+                      <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="dbeb2012-575e-499a-8133-9e9286abfeb7" InformativeScreenshot="0b549c7bee52a3cb05f39aeb6ed7926d" Selector="&lt;webctrl tag='MACROPONENT*' /&gt;&lt;webctrl shadowhostid='' tag='SN-POLARIS-LAYOUT' /&gt;&lt;webctrl shadowhostid='' tag='SN-POLARIS-HEADER' /&gt;&lt;webctrl shadowhostid='' tag='SN-SEARCH-INPUT-WRAPPER' /&gt;&lt;webctrl shadowhostid='' tag='SN-COMPONENT-WORKSPACE-GLOBAL-SEARCH-TYPEAHEAD' /&gt;&lt;webctrl id='sncwsgs-typeahead-input' shadowhostid='' tag='INPUT' /&gt;" WaitForReady="COMPLETE">
+                        <ui:Target.TimeoutMS>
+                          <InArgument x:TypeArguments="x:Int32" />
+                        </ui:Target.TimeoutMS>
+                      </ui:Target>
+                    </ui:TypeInto.Target>
+                  </ui:TypeInto>
+                  <ui:SendHotkey ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" Activate="True" DisplayName="Send Hotkey" sap:VirtualizedContainerService.HintSize="478,133" sap2010:WorkflowViewState.IdRef="SendHotkey_8" Key="enter" KeyModifiers="None" SpecialKey="True">
+                    <ui:SendHotkey.Target>
+                      <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="387d6b44-17d2-4230-844a-efdad9f065e2" Selector="&lt;webctrl tag='MACROPONENT*' /&gt;&lt;webctrl shadowhostid='' tag='SN-POLARIS-LAYOUT' /&gt;&lt;webctrl shadowhostid='' tag='SN-POLARIS-HEADER' /&gt;&lt;webctrl shadowhostid='' tag='SN-SEARCH-INPUT-WRAPPER' /&gt;&lt;webctrl shadowhostid='' tag='SN-COMPONENT-WORKSPACE-GLOBAL-SEARCH-TYPEAHEAD' /&gt;&lt;webctrl id='sncwsgs-typeahead-input' shadowhostid='' tag='INPUT' /&gt;">
+                        <ui:Target.TimeoutMS>
+                          <InArgument x:TypeArguments="x:Int32" />
+                        </ui:Target.TimeoutMS>
+                        <ui:Target.WaitForReady>
+                          <InArgument x:TypeArguments="ui:WaitForReady" />
+                        </ui:Target.WaitForReady>
+                      </ui:Target>
+                    </ui:SendHotkey.Target>
+                  </ui:SendHotkey>
+                  <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="478,52" sap2010:WorkflowViewState.IdRef="CommentOut_18">
+                    <ui:CommentOut.Body>
+                      <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="400,314" sap2010:WorkflowViewState.IdRef="Sequence_33">
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                        <ui:GetAttribute ContinueOnError="{x:Null}" Attribute="innertext" DisplayName="Get innertext from internal working notes (Não existe o innertext, o texto só fica salvo após clicar no save)" sap:VirtualizedContainerService.HintSize="338,203" sap2010:WorkflowViewState.IdRef="GetAttribute_10">
+                          <ui:GetAttribute.Result>
+                            <OutArgument x:TypeArguments="x:String">[internalWorkingNotesExistingText]</OutArgument>
+                          </ui:GetAttribute.Result>
+                          <ui:GetAttribute.Target>
+                            <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="5c92163a-a0e2-4978-9a50-293e300a789d" InformativeScreenshot="26939d8f8eb06b690e42a2fbdf040d3d" Selector="&lt;wnd app='chrome.exe' omit:cls='Chrome_WidgetWin_1' title='*| Tarefa de Catálogo | ServiceNow - Google Chrome' /&gt;&lt;ctrl omit:name='SCTASK3835361 | Tarefa de Catálogo | ServiceNow' role='document' /&gt;&lt;ctrl omit:name='Conteúdo principal' role='document' /&gt;&lt;ctrl omit:name='SCTASK3835361 | Tarefa de Catálogo | ServiceNow' role='document' /&gt;&lt;ctrl omit:name='Detalhes Recolher seção: Detalhes Detalhes Seção de formulário' role='property page' /&gt;&lt;ctrl omit:name='Detalhes Seção de formulário' role='pane' /&gt;&lt;ctrl name='Anotações de trabalho' role='editable text' /&gt;">
+                              <ui:Target.TimeoutMS>
+                                <InArgument x:TypeArguments="x:Int32" />
+                              </ui:Target.TimeoutMS>
+                              <ui:Target.WaitForReady>
+                                <InArgument x:TypeArguments="ui:WaitForReady" />
+                              </ui:Target.WaitForReady>
+                            </ui:Target>
+                          </ui:GetAttribute.Target>
+                        </ui:GetAttribute>
+                      </Sequence>
+                    </ui:CommentOut.Body>
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                  </ui:CommentOut>
+                  <Assign DisplayName="Concatenar internal working notes" sap:VirtualizedContainerService.HintSize="478,61" sap2010:WorkflowViewState.IdRef="Assign_12">
+                    <Assign.To>
+                      <OutArgument x:TypeArguments="x:String">[internalWorkingNotesExistingText]</OutArgument>
+                    </Assign.To>
+                    <Assign.Value>
+                      <InArgument x:TypeArguments="x:String">Teste RPA Internal</InArgument>
+                    </Assign.Value>
+                  </Assign>
+                  <ui:TypeInto ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" SimulateType="{x:Null}" Activate="True" AlterIfDisabled="True" DisplayName="Type Into internal working notes" EmptyField="True" sap:VirtualizedContainerService.HintSize="478,155" sap2010:WorkflowViewState.IdRef="TypeInto_7" SendWindowMessages="True" Text="[internalWorkingNotesExistingText]">
+                    <ui:TypeInto.Target>
+                      <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="00fd615d-c733-4a33-9246-a80ffa73fe9d" InformativeScreenshot="3264f201e78333d0b0341cb2d360ff39" Selector="&lt;wnd app='chrome.exe' omit:cls='Chrome_WidgetWin_1' title='*| Catalog Task | ServiceNow - Google Chrome' /&gt;&lt;ctrl omit:name='*| Catalog Task | ServiceNow' role='document' /&gt;&lt;ctrl omit:name='Main Content' role='document' /&gt;&lt;ctrl omit:name='*| Catalog Task | ServiceNow' role='document' /&gt;&lt;ctrl omit:name='Details Collapse section: Details Details form section' role='property page' /&gt;&lt;ctrl omit:name='Details form section' role='pane' /&gt;&lt;ctrl name='Internal Work Notes' role='editable text' /&gt;">
+                        <ui:Target.TimeoutMS>
+                          <InArgument x:TypeArguments="x:Int32" />
+                        </ui:Target.TimeoutMS>
+                        <ui:Target.WaitForReady>
+                          <InArgument x:TypeArguments="ui:WaitForReady" />
+                        </ui:Target.WaitForReady>
+                      </ui:Target>
+                    </ui:TypeInto.Target>
+                  </ui:TypeInto>
+                  <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="478,141" sap2010:WorkflowViewState.IdRef="LogMessage_27" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[&quot;Internal&quot; + internalWorkingNotesExistingText]" />
+                  <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="478,52" sap2010:WorkflowViewState.IdRef="CommentOut_6">
+                    <ui:CommentOut.Body>
+                      <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="400,314" sap2010:WorkflowViewState.IdRef="Sequence_19">
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                        <ui:GetAttribute ContinueOnError="{x:Null}" Attribute="innertext" DisplayName="Get Attribute external working notes text (Não existe o innertext, o texto só fica salvo após clicar no save)" sap:VirtualizedContainerService.HintSize="338,203" sap2010:WorkflowViewState.IdRef="GetAttribute_4">
+                          <ui:GetAttribute.Result>
+                            <OutArgument x:TypeArguments="x:String">[externalWorkingNotesExistingText]</OutArgument>
+                          </ui:GetAttribute.Result>
+                          <ui:GetAttribute.Target>
+                            <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="6c52ef71-94a7-460f-95f3-c522dd7fe6ab" InformativeScreenshot="28f37e7d10821d02131ea7470f6e57f1" Selector="&lt;wnd app='chrome.exe' omit:cls='Chrome_WidgetWin_1' title='*| Tarefa de Catálogo | ServiceNow - Google Chrome' /&gt;&lt;ctrl omit:name='SCTASK3835361 | Tarefa de Catálogo | ServiceNow' role='document' /&gt;&lt;ctrl omit:name='Conteúdo principal' role='document' /&gt;&lt;ctrl omit:name='SCTASK3835361 | Tarefa de Catálogo | ServiceNow' role='document' /&gt;&lt;ctrl omit:name='Detalhes Recolher seção: Detalhes Detalhes Seção de formulário' role='property page' /&gt;&lt;ctrl omit:name='Detalhes Seção de formulário' role='pane' /&gt;&lt;ctrl name='Comentários adicionais' role='editable text' /&gt;">
+                              <ui:Target.TimeoutMS>
+                                <InArgument x:TypeArguments="x:Int32" />
+                              </ui:Target.TimeoutMS>
+                              <ui:Target.WaitForReady>
+                                <InArgument x:TypeArguments="ui:WaitForReady" />
+                              </ui:Target.WaitForReady>
+                            </ui:Target>
+                          </ui:GetAttribute.Target>
+                        </ui:GetAttribute>
+                      </Sequence>
+                    </ui:CommentOut.Body>
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                  </ui:CommentOut>
+                  <Assign DisplayName="Concatenar internal working notes" sap:VirtualizedContainerService.HintSize="478,61" sap2010:WorkflowViewState.IdRef="Assign_13">
+                    <Assign.To>
+                      <OutArgument x:TypeArguments="x:String">[externalWorkingNotesExistingText]</OutArgument>
+                    </Assign.To>
+                    <Assign.Value>
+                      <InArgument x:TypeArguments="x:String">Teste RPA External</InArgument>
+                    </Assign.Value>
+                  </Assign>
+                  <ui:TypeInto ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" SimulateType="{x:Null}" Activate="True" AlterIfDisabled="True" DisplayName="Type Into internal working notes" sap:VirtualizedContainerService.HintSize="478,155" sap2010:WorkflowViewState.IdRef="TypeInto_8" Text="[externalWorkingNotesExistingText]">
+                    <ui:TypeInto.Target>
+                      <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="803ce530-fa9c-4669-8ad9-d544b16a08c8" InformativeScreenshot="edf06562bf10647efd34ef445686927b" Selector="&lt;wnd app='chrome.exe' omit:cls='Chrome_WidgetWin_1' title='*| Catalog Task | ServiceNow - Google Chrome' /&gt;&lt;ctrl omit:name='*| Catalog Task | ServiceNow' role='document' /&gt;&lt;ctrl omit:name='Main Content' role='document' /&gt;&lt;ctrl omit:name='*| Catalog Task | ServiceNow' role='document' /&gt;&lt;ctrl omit:name='Details Collapse section: Details Details form section' role='property page' /&gt;&lt;ctrl omit:name='Details form section' role='pane' /&gt;&lt;ctrl name='External Work Notes' role='editable text' /&gt;">
+                        <ui:Target.TimeoutMS>
+                          <InArgument x:TypeArguments="x:Int32" />
+                        </ui:Target.TimeoutMS>
+                        <ui:Target.WaitForReady>
+                          <InArgument x:TypeArguments="ui:WaitForReady" />
+                        </ui:Target.WaitForReady>
+                      </ui:Target>
+                    </ui:TypeInto.Target>
+                  </ui:TypeInto>
+                  <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="478,141" sap2010:WorkflowViewState.IdRef="LogMessage_26" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[&quot;External&quot; + externalWorkingNotesExistingText]" />
+                  <ui:Click DelayBefore="{x:Null}" DelayMS="{x:Null}" SimulateClick="{x:Null}" AlterIfDisabled="True" ClickType="CLICK_SINGLE" DisplayName="Click save" sap:VirtualizedContainerService.HintSize="478,107" sap2010:WorkflowViewState.IdRef="Click_6" KeyModifiers="None" MouseButton="BTN_LEFT" SendWindowMessages="True">
+                    <ui:Click.CursorPosition>
+                      <ui:CursorPosition Position="Center">
+                        <ui:CursorPosition.OffsetX>
+                          <InArgument x:TypeArguments="x:Int32" />
+                        </ui:CursorPosition.OffsetX>
+                        <ui:CursorPosition.OffsetY>
+                          <InArgument x:TypeArguments="x:Int32" />
+                        </ui:CursorPosition.OffsetY>
+                      </ui:CursorPosition>
+                    </ui:Click.CursorPosition>
+                    <ui:Click.Target>
+                      <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="379e9dda-0b4f-4e78-9386-036d086ab3b8" InformativeScreenshot="7c975acf498f22eb9f52591beae6cc92" Selector="&lt;wnd app='chrome.exe' omit:cls='Chrome_WidgetWin_1' title='*| Catalog Task | ServiceNow - Google Chrome' /&gt;&lt;ctrl omit:name='SCTASK3953170 | Catalog Task | ServiceNow' role='document' /&gt;&lt;ctrl omit:name='Main Content' role='document' /&gt;&lt;ctrl omit:name='SCTASK3953170 | Catalog Task | ServiceNow' role='document' /&gt;&lt;ctrl idx='2' name='Save' role='push button' /&gt;" TimeoutMS="30000" WaitForReady="COMPLETE" />
+                    </ui:Click.Target>
+                  </ui:Click>
+                  <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="478,141" sap2010:WorkflowViewState.IdRef="LogMessage_25" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[&quot;Clicou em salvar&quot;]" />
+                  <ui:UiElementExists DisplayName="Element Exists 'pane'" Exists="[popUpConfirmacao]" sap:VirtualizedContainerService.HintSize="478,107" sap2010:WorkflowViewState.IdRef="UiElementExists_4">
+                    <ui:UiElementExists.Target>
+                      <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="41478cf0-5424-442b-89a9-0b3a68d1a974" InformativeScreenshot="8a3a880118fc5ee82283cc0751ce8bfb" Selector="&lt;wnd app='chrome.exe' cls='Chrome_WidgetWin_1' title='* | Catalog Task | ServiceNow Service Management Sui*' /&gt;&lt;ctrl name='servicenow.dhl.com says' role='dialog' /&gt;&lt;ctrl idx='2' role='pane' /&gt;" TimeoutMS="5000">
+                        <ui:Target.WaitForReady>
+                          <InArgument x:TypeArguments="ui:WaitForReady" />
+                        </ui:Target.WaitForReady>
+                      </ui:Target>
+                    </ui:UiElementExists.Target>
+                  </ui:UiElementExists>
+                  <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="478,141" sap2010:WorkflowViewState.IdRef="LogMessage_21" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[&quot;Verifica se o PopUp Existe&quot; + popUpConfirmacao.ToString]" />
+                  <If Condition="[popUpConfirmacao]" sap:VirtualizedContainerService.HintSize="478,808" sap2010:WorkflowViewState.IdRef="If_6">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <If.Then>
+                      <Sequence sap:VirtualizedContainerService.HintSize="400,491" sap2010:WorkflowViewState.IdRef="Sequence_21">
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                        <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'push button  OK'" sap:VirtualizedContainerService.HintSize="338,107" sap2010:WorkflowViewState.IdRef="Click_7" KeyModifiers="None" MouseButton="BTN_LEFT">
+                          <ui:Click.CursorPosition>
+                            <ui:CursorPosition Position="Center">
+                              <ui:CursorPosition.OffsetX>
+                                <InArgument x:TypeArguments="x:Int32" />
+                              </ui:CursorPosition.OffsetX>
+                              <ui:CursorPosition.OffsetY>
+                                <InArgument x:TypeArguments="x:Int32" />
+                              </ui:CursorPosition.OffsetY>
+                            </ui:CursorPosition>
+                          </ui:Click.CursorPosition>
+                          <ui:Click.Target>
+                            <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="ab7553ad-0464-46fe-8a66-1a791f4bdfe0" InformativeScreenshot="d23be6637da6345b584d25cf0f229887" Selector="&lt;wnd app='chrome.exe' cls='Chrome_WidgetWin_1' title='*| Catalog Task | ServiceNow Service Management Sui*' /&gt;&lt;ctrl name='servicenow.dhl.com says' role='dialog' /&gt;&lt;ctrl name='OK' role='push button' /&gt;">
+                              <ui:Target.TimeoutMS>
+                                <InArgument x:TypeArguments="x:Int32" />
+                              </ui:Target.TimeoutMS>
+                              <ui:Target.WaitForReady>
+                                <InArgument x:TypeArguments="ui:WaitForReady" />
+                              </ui:Target.WaitForReady>
+                            </ui:Target>
+                          </ui:Click.Target>
+                        </ui:Click>
+                        <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="338,141" sap2010:WorkflowViewState.IdRef="LogMessage_22" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[&quot;Clica no botão Ok&quot;]" />
+                        <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="338,52" sap2010:WorkflowViewState.IdRef="CommentOut_7">
+                          <ui:CommentOut.Body>
+                            <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="400,264" sap2010:WorkflowViewState.IdRef="Sequence_20">
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                              <ui:SendHotkey ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" Activate="True" DisplayName="Send Hotkey 'chrome.exe Chrome'" sap:VirtualizedContainerService.HintSize="338,153" sap2010:WorkflowViewState.IdRef="SendHotkey_6" Key="enter" KeyModifiers="None" SpecialKey="True">
+                                <ui:SendHotkey.Target>
+                                  <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="178b9618-c4a8-45fd-8707-a546be2fc44f" InformativeScreenshot="8a3a880118fc5ee82283cc0751ce8bfb" Selector="&lt;wnd app='chrome.exe' cls='Chrome_WidgetWin_1' title='SCTASK3419697 | Catalog Task | ServiceNow Service Management Sui*' /&gt;&lt;ctrl name='servicenow.dhl.com says' role='dialog' /&gt;&lt;ctrl idx='2' role='pane' /&gt;">
+                                    <ui:Target.TimeoutMS>
+                                      <InArgument x:TypeArguments="x:Int32" />
+                                    </ui:Target.TimeoutMS>
+                                    <ui:Target.WaitForReady>
+                                      <InArgument x:TypeArguments="ui:WaitForReady" />
+                                    </ui:Target.WaitForReady>
+                                  </ui:Target>
+                                </ui:SendHotkey.Target>
+                              </ui:SendHotkey>
+                            </Sequence>
+                          </ui:CommentOut.Body>
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                        </ui:CommentOut>
+                      </Sequence>
+                    </If.Then>
+                    <If.Else>
+                      <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="334,141" sap2010:WorkflowViewState.IdRef="LogMessage_23" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[&quot;Botão ok não existe&quot;]" />
+                    </If.Else>
+                  </If>
+                  <ui:UiElementExists DisplayName="Element Task updated message " Exists="[sinalAtualizacao]" sap:VirtualizedContainerService.HintSize="478,107" sap2010:WorkflowViewState.IdRef="UiElementExists_3">
+                    <ui:UiElementExists.Target>
+                      <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="f28e2520-a0d2-4440-a33b-200336ce9e7b" InformativeScreenshot="dce59588fb547052d703a1b814b69707" Selector="&lt;wnd app='chrome.exe' omit:cls='Chrome_WidgetWin_1' title='*| Catalog Task | ServiceNow - Google Chrome' /&gt;&lt;ctrl omit:name='*| Catalog Task | ServiceNow' role='document' /&gt;&lt;ctrl omit:name='Main Content' role='document' /&gt;&lt;ctrl omit:name='*| Catalog Task | ServiceNow' role='document' /&gt;&lt;ctrl name='RITM*' role='text' text='RITM*' /&gt;" TimeoutMS="7000">
+                        <ui:Target.WaitForReady>
+                          <InArgument x:TypeArguments="ui:WaitForReady" />
+                        </ui:Target.WaitForReady>
+                      </ui:Target>
+                    </ui:UiElementExists.Target>
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                  </ui:UiElementExists>
+                  <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="478,141" sap2010:WorkflowViewState.IdRef="LogMessage_18" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[&quot;Verifica se a mensagem de confirmação RITM apareceu&quot; + sinalAtualizacao.ToString]" />
+                  <ui:GetAttribute ContinueOnError="{x:Null}" Attribute="selecteditem" DisplayName="Get Attribute 'SELECT  sc_task.state'" sap:VirtualizedContainerService.HintSize="478,203" sap2010:WorkflowViewState.IdRef="GetAttribute_9">
+                    <ui:GetAttribute.Result>
+                      <OutArgument x:TypeArguments="x:String">[status]</OutArgument>
+                    </ui:GetAttribute.Result>
+                    <ui:GetAttribute.Target>
+                      <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="73f17fd0-9f7b-4da2-9d14-b6d0f6a7dd1e" InformativeScreenshot="c6f95dfa6846cc2e09a0b917746972cf" Selector="&lt;wnd app='chrome.exe' omit:cls='Chrome_WidgetWin_1' title='*| Catalog Task | ServiceNow - Google Chrome' /&gt;&lt;ctrl omit:name='*| Catalog Task | ServiceNow' role='document' /&gt;&lt;ctrl omit:name='Main Content' role='document' /&gt;&lt;ctrl omit:name='*| Catalog Task | ServiceNow' role='document' /&gt;&lt;ctrl omit:name='Catalog Task form section' role='pane' /&gt;&lt;ctrl name='State' role='combo box' text='*' /&gt;">
+                        <ui:Target.TimeoutMS>
+                          <InArgument x:TypeArguments="x:Int32" />
+                        </ui:Target.TimeoutMS>
+                        <ui:Target.WaitForReady>
+                          <InArgument x:TypeArguments="ui:WaitForReady" />
+                        </ui:Target.WaitForReady>
+                      </ui:Target>
+                    </ui:GetAttribute.Target>
+                  </ui:GetAttribute>
+                  <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="478,141" sap2010:WorkflowViewState.IdRef="LogMessage_19" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[&quot;Verifica o selecteditem em status&quot; + status]" />
+                  <ui:GetAttribute ContinueOnError="{x:Null}" Attribute="text" DisplayName="Get Attribute" sap:VirtualizedContainerService.HintSize="478,203" sap2010:WorkflowViewState.IdRef="GetAttribute_6">
+                    <ui:GetAttribute.Result>
+                      <OutArgument x:TypeArguments="x:String">[mensagemAtualizacao]</OutArgument>
+                    </ui:GetAttribute.Result>
+                    <ui:GetAttribute.Target>
+                      <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="08e94f3c-2496-45f3-bc8a-23c9802f2b43" InformativeScreenshot="2d2671a71bbf2e0f5683e5bfd1e8f8b6" Selector="&lt;wnd app='chrome.exe' omit:cls='Chrome_WidgetWin_1' title='*| Catalog Task | ServiceNow - Google Chrome' /&gt;&lt;ctrl omit:name='*| Catalog Task | ServiceNow' role='document' /&gt;&lt;ctrl omit:name='Main Content' role='document' /&gt;&lt;ctrl omit:name='*| Catalog Task | ServiceNow' role='document' /&gt;&lt;ctrl name='RITM*' role='text' text='RITM*' /&gt;" TimeoutMS="5000">
+                        <ui:Target.WaitForReady>
+                          <InArgument x:TypeArguments="ui:WaitForReady" />
+                        </ui:Target.WaitForReady>
+                      </ui:Target>
+                    </ui:GetAttribute.Target>
+                  </ui:GetAttribute>
+                  <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="478,141" sap2010:WorkflowViewState.IdRef="LogMessage_20" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[&quot;Verifica o text em mensagemAtualização&quot; + mensagemAtualizacao]" />
+                </Sequence>
+              </ActivityAction>
+            </ui:OpenBrowser.Body>
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+          </ui:OpenBrowser>
+        </Sequence>
+      </ui:CommentOut.Body>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </ui:CommentOut>
+    <ui:UiElementExists DisplayName="Element Exists 'pane'" Exists="[popUpUpload]" sap:VirtualizedContainerService.HintSize="478,107" sap2010:WorkflowViewState.IdRef="UiElementExists_7">
+      <ui:UiElementExists.Target>
+        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="1c4b0208-0cff-4c40-9bb1-5c326e3c4e1a" InformativeScreenshot="9c9100e67ee046fa6edd3e52a9f861bc" Selector="&lt;wnd app='chrome.exe' cls='Chrome_WidgetWin_1' title='*| Catalog Task | ServiceNow*' /&gt;&lt;ctrl name='*' role='dialog' /&gt;&lt;ctrl idx='2' role='pane' /&gt;" TimeoutMS="15000">
+          <ui:Target.WaitForReady>
+            <InArgument x:TypeArguments="ui:WaitForReady" />
+          </ui:Target.WaitForReady>
+        </ui:Target>
+      </ui:UiElementExists.Target>
+    </ui:UiElementExists>
+    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="478,141" sap2010:WorkflowViewState.IdRef="LogMessage_28" Level="Info" Message="[&quot;Pop-up Chrome upload:&quot; + popUpUpload.ToString]" />
+    <If Condition="[popUpUpload]" DisplayName="If - Pop Error Upload" sap:VirtualizedContainerService.HintSize="478,641" sap2010:WorkflowViewState.IdRef="If_10">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <If.Then>
+        <Sequence sap:VirtualizedContainerService.HintSize="400,365" sap2010:WorkflowViewState.IdRef="Sequence_35">
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+          <ui:Click DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" AlterIfDisabled="True" ClickType="CLICK_SINGLE" DisplayName="Click 'push button  Cancel'" sap:VirtualizedContainerService.HintSize="338,107" sap2010:WorkflowViewState.IdRef="Click_9" KeyModifiers="None" MouseButton="BTN_LEFT">
+            <ui:Click.CursorPosition>
+              <ui:CursorPosition Position="Center">
+                <ui:CursorPosition.OffsetX>
+                  <InArgument x:TypeArguments="x:Int32" />
+                </ui:CursorPosition.OffsetX>
+                <ui:CursorPosition.OffsetY>
+                  <InArgument x:TypeArguments="x:Int32" />
+                </ui:CursorPosition.OffsetY>
+              </ui:CursorPosition>
+            </ui:Click.CursorPosition>
+            <ui:Click.Target>
+              <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="8fbc9ea7-e784-4ac5-8f78-13697e942f89" InformativeScreenshot="63b07895cccfe81ed7ee092c176f8d2c" Selector="&lt;wnd app='chrome.exe' cls='Chrome_WidgetWin_1' title='*Catalog Task | ServiceNow*' /&gt;&lt;ctrl name='*' role='dialog' /&gt;&lt;ctrl name='Cancel' role='push button' /&gt;">
+                <ui:Target.TimeoutMS>
+                  <InArgument x:TypeArguments="x:Int32" />
+                </ui:Target.TimeoutMS>
+                <ui:Target.WaitForReady>
+                  <InArgument x:TypeArguments="ui:WaitForReady" />
+                </ui:Target.WaitForReady>
+              </ui:Target>
+            </ui:Click.Target>
+          </ui:Click>
+          <ui:Click DelayBefore="{x:Null}" DelayMS="{x:Null}" SimulateClick="{x:Null}" AlterIfDisabled="True" ClickType="CLICK_SINGLE" DisplayName="Click 'INPUT  attachButton'" sap:VirtualizedContainerService.HintSize="338,107" sap2010:WorkflowViewState.IdRef="Click_10" KeyModifiers="None" MouseButton="BTN_LEFT" SendWindowMessages="True">
+            <ui:Click.CursorPosition>
+              <ui:CursorPosition Position="Center">
+                <ui:CursorPosition.OffsetX>
+                  <InArgument x:TypeArguments="x:Int32" />
+                </ui:CursorPosition.OffsetX>
+                <ui:CursorPosition.OffsetY>
+                  <InArgument x:TypeArguments="x:Int32" />
+                </ui:CursorPosition.OffsetY>
+              </ui:CursorPosition>
+            </ui:Click.CursorPosition>
+            <ui:Click.Target>
+              <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="82e4a94e-db54-4552-ac3c-d06f96770d6b" InformativeScreenshot="141eeafd1b110e6bc56a7ba98cf91ef0" Selector="&lt;wnd app='chrome.exe' omit:cls='Chrome_WidgetWin_1' title='*| Catalog Task | ServiceNow - Google Chrome' /&gt;&lt;ctrl omit:name='*| Catalog Task | ServiceNow' role='document' /&gt;&lt;ctrl omit:name='Main Content' role='document' /&gt;&lt;ctrl omit:name='*| Catalog Task | ServiceNow' role='document' /&gt;&lt;ctrl idx='2' role='row' /&gt;&lt;ctrl omit:name='Choose Files: No file chosen Attach Add Another Attachment' role='cell' /&gt;&lt;ctrl role='row' /&gt;&lt;ctrl name='Attach' role='cell' /&gt;&lt;ctrl name='Attach' role='push button' /&gt;" WaitForReady="COMPLETE">
+                <ui:Target.TimeoutMS>
+                  <InArgument x:TypeArguments="x:Int32" />
+                </ui:Target.TimeoutMS>
+              </ui:Target>
+            </ui:Click.Target>
+          </ui:Click>
+        </Sequence>
+      </If.Then>
+    </If>
+  </Sequence>
+</Activity>

@@ -5,17 +5,17 @@
   "dependencies": {
     "dhl-dtentry-oracle-library_Windows": "[1.2.13]",
     "UiPath.Credentials.Activities": "[2.1.0]",
-    "UiPath.Excel.Activities": "[2.24.2]",
-    "UiPath.Mail.Activities": "[1.23.11]",
-    "UiPath.System.Activities": "[24.10.5]",
-    "UiPath.UIAutomation.Activities": "[24.10.3]",
+    "UiPath.Excel.Activities": "[2.24.3]",
+    "UiPath.Mail.Activities": "[1.24.2]",
+    "UiPath.System.Activities": "[24.10.6]",
+    "UiPath.UIAutomation.Activities": "[24.10.7]",
     "UiPath.WebAPI.Activities": "[1.21.1]"
   },
   "webServices": [],
   "entitiesStores": [],
   "schemaVersion": "4.0",
   "studioVersion": "19.10.2.0",
-  "projectVersion": "2.3.11",
+  "projectVersion": "2.3.12",
   "runtimeOptions": {
     "autoDispose": false,
     "netFrameworkLazyLoading": false,

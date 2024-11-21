@@ -40,7 +40,7 @@
   <VisualBasic.Settings>
     <x:Null />
   </VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>1411.3333333333333,29336</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>1411,30803</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>Atualiza_Status_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="50">
@@ -78,6 +78,7 @@
       <x:String>UiPath.UIAutomationCore.Contracts</x:String>
       <x:String>UiPath.UIAutomationNext.Enums</x:String>
       <x:String>System.Activities.Runtime.Collections</x:String>
+      <x:String>UiPath.Platform.SyncObjects</x:String>
     </scg:List>
   </TextExpression.NamespacesForImplementation>
   <TextExpression.ReferencesForImplementation>
@@ -134,6 +135,7 @@
       <AssemblyReference>UiPath.Workflow</AssemblyReference>
       <AssemblyReference>WindowsBase</AssemblyReference>
       <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
   <sap:WorkflowViewStateService.ViewState>
@@ -141,7 +143,7 @@
       <x:Boolean x:Key="ShouldExpandAll">True</x:Boolean>
     </scg:Dictionary>
   </sap:WorkflowViewStateService.ViewState>
-  <Sequence sap2010:Annotation.AnnotationText="Processo que atualiza o status do request IT." DisplayName="Atualiza Status" sap:VirtualizedContainerService.HintSize="1421.3333333333333,29231.333333333332" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence sap2010:Annotation.AnnotationText="Processo que atualiza o status do request IT." DisplayName="Atualiza Status" sap:VirtualizedContainerService.HintSize="1421,30738" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:Boolean" Name="isPesquisaCarregada" />
       <Variable x:TypeArguments="x:Boolean" Name="isJanelaSAVECarregada" />
@@ -154,9 +156,9 @@
         <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="1359.3333333333333,54" sap2010:WorkflowViewState.IdRef="CommentOut_2">
+    <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="1359,52" sap2010:WorkflowViewState.IdRef="CommentOut_2">
       <ui:CommentOut.Body>
-        <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="450,84.66666666666667" sap2010:WorkflowViewState.IdRef="Sequence_18">
+        <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="450,81" sap2010:WorkflowViewState.IdRef="Sequence_18">
           <sap:WorkflowViewStateService.ViewState>
             <scg:Dictionary x:TypeArguments="x:String, x:Object">
               <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -207,8 +209,8 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </ui:CommentOut>
-    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="1359.3333333333333,144.66666666666666" sap2010:WorkflowViewState.IdRef="LogMessage_24" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[&quot;Abrindo navegador&quot;]" />
-    <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="1359.3333333333333,28811.333333333332" sap2010:WorkflowViewState.IdRef="TryCatch_1">
+    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="1359,141" sap2010:WorkflowViewState.IdRef="LogMessage_24" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[&quot;Abrindo navegador&quot;]" />
+    <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="1359,30323" sap2010:WorkflowViewState.IdRef="TryCatch_1">
       <TryCatch.Variables>
         <Variable x:TypeArguments="ui:Browser" Name="browser" />
       </TryCatch.Variables>
@@ -219,13 +221,13 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
       <TryCatch.Try>
-        <ui:OpenBrowser AutomaticallyDownloadWebDriver="{x:Null}" CommunicationMethod="{x:Null}" Hidden="{x:Null}" NewSession="{x:Null}" Private="{x:Null}" BrowserType="Chrome" DisplayName="Open Browser" sap:VirtualizedContainerService.HintSize="1320.6666666666667,20454" sap2010:WorkflowViewState.IdRef="OpenBrowser_1" UiBrowser="[browser]" Url="[in_Config(&quot;RequestItUrl&quot;+&quot;_&quot;+in_Config(&quot;Mode&quot;).ToString).ToString]">
+        <ui:OpenBrowser AutomaticallyDownloadWebDriver="{x:Null}" CommunicationMethod="{x:Null}" Hidden="{x:Null}" NewSession="{x:Null}" Private="{x:Null}" BrowserType="Chrome" DisplayName="Open Browser" sap:VirtualizedContainerService.HintSize="1321,21976" sap2010:WorkflowViewState.IdRef="OpenBrowser_1" UiBrowser="[browser]" Url="[in_Config(&quot;RequestItUrl&quot;+&quot;_&quot;+in_Config(&quot;Mode&quot;).ToString).ToString]">
           <ui:OpenBrowser.Body>
             <ActivityAction x:TypeArguments="x:Object">
               <ActivityAction.Argument>
                 <DelegateInArgument x:TypeArguments="x:Object" Name="ContextTarget" />
               </ActivityAction.Argument>
-              <Sequence sap:VirtualizedContainerService.HintSize="1286.6666666666667,21167.333333333332" sap2010:WorkflowViewState.IdRef="Sequence_12">
+              <Sequence sap:VirtualizedContainerService.HintSize="1287,21851" sap2010:WorkflowViewState.IdRef="Sequence_12">
                 <Sequence.Variables>
                   <Variable x:TypeArguments="x:String" Name="isTaskReadOnly" />
                   <Variable x:TypeArguments="x:String" Name="statusRequestIt" />
@@ -245,10 +247,10 @@
                     <x:Boolean x:Key="IsPinned">False</x:Boolean>
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
-                <ui:MaximizeWindow Window="{x:Null}" DisplayName="Maximize Window" sap:VirtualizedContainerService.HintSize="1224.6666666666667,25.333333333333332" sap2010:WorkflowViewState.IdRef="MaximizeWindow_1" />
-                <Delay Duration="00:00:10" sap:VirtualizedContainerService.HintSize="1224.6666666666667,91.33333333333333" sap2010:WorkflowViewState.IdRef="Delay_1" />
-                <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="1224.6666666666667,143.33333333333334" sap2010:WorkflowViewState.IdRef="LogMessage_25" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[&quot;Verificando a existencia de RestorePages&quot;]" />
-                <ui:UiElementExists DisplayName="Element Exists 'chrome.exe Restore'" Exists="[RestorePopUp]" sap:VirtualizedContainerService.HintSize="1224.6666666666667,107.33333333333333" sap2010:WorkflowViewState.IdRef="UiElementExists_6">
+                <ui:MaximizeWindow Window="{x:Null}" DisplayName="Maximize Window" sap:VirtualizedContainerService.HintSize="1225,25" sap2010:WorkflowViewState.IdRef="MaximizeWindow_1" />
+                <Delay Duration="00:00:10" sap:VirtualizedContainerService.HintSize="1225,90" sap2010:WorkflowViewState.IdRef="Delay_1" />
+                <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="1225,141" sap2010:WorkflowViewState.IdRef="LogMessage_25" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[&quot;Verificando a existencia de RestorePages&quot;]" />
+                <ui:UiElementExists DisplayName="Element Exists 'chrome.exe Restore'" Exists="[RestorePopUp]" sap:VirtualizedContainerService.HintSize="1225,107" sap2010:WorkflowViewState.IdRef="UiElementExists_6">
                   <ui:UiElementExists.Target>
                     <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="95b25732-8d91-4a8f-8e62-7d9778976444" InformativeScreenshot="2efce906e2f95923e4ba15e0cfef3341" Selector="&lt;wnd app='chrome.exe' omit:cls='Chrome_WidgetWin_1' title='Restore pages?' /&gt;" TimeoutMS="1000">
                       <ui:Target.WaitForReady>
@@ -257,15 +259,15 @@
                     </ui:Target>
                   </ui:UiElementExists.Target>
                 </ui:UiElementExists>
-                <If Condition="[RestorePopUp]" sap:VirtualizedContainerService.HintSize="1224.6666666666667,573.3333333333334" sap2010:WorkflowViewState.IdRef="If_21">
+                <If Condition="[RestorePopUp]" sap:VirtualizedContainerService.HintSize="1225,570" sap2010:WorkflowViewState.IdRef="If_21">
                   <If.Then>
-                    <Sequence sap:VirtualizedContainerService.HintSize="376,390" sap2010:WorkflowViewState.IdRef="Sequence_58">
+                    <Sequence sap:VirtualizedContainerService.HintSize="376,388" sap2010:WorkflowViewState.IdRef="Sequence_58">
                       <sap:WorkflowViewStateService.ViewState>
                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
                           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
-                      <ui:Click DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" AlterIfDisabled="True" ClickType="CLICK_SINGLE" DisplayName="Click 'chrome.exe Restore'" sap:VirtualizedContainerService.HintSize="334,107.33333333333333" sap2010:WorkflowViewState.IdRef="Click_25" KeyModifiers="None" MouseButton="BTN_LEFT">
+                      <ui:Click DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" AlterIfDisabled="True" ClickType="CLICK_SINGLE" DisplayName="Click 'chrome.exe Restore'" sap:VirtualizedContainerService.HintSize="334,107" sap2010:WorkflowViewState.IdRef="Click_25" KeyModifiers="None" MouseButton="BTN_LEFT">
                         <ui:Click.CursorPosition>
                           <ui:CursorPosition Position="Center">
                             <ui:CursorPosition.OffsetX>
@@ -287,7 +289,7 @@
                           </ui:Target>
                         </ui:Click.Target>
                       </ui:Click>
-                      <ui:SendHotkey ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" Activate="True" DisplayName="Send Hotkey 'chrome.exe Restore'" sap:VirtualizedContainerService.HintSize="334,155.33333333333334" sap2010:WorkflowViewState.IdRef="SendHotkey_3" Key="esc" KeyModifiers="None" SpecialKey="True">
+                      <ui:SendHotkey ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" Activate="True" DisplayName="Send Hotkey 'chrome.exe Restore'" sap:VirtualizedContainerService.HintSize="334,153" sap2010:WorkflowViewState.IdRef="SendHotkey_3" Key="esc" KeyModifiers="None" SpecialKey="True">
                         <ui:SendHotkey.Target>
                           <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="753fe274-b9d3-4c94-ad17-7c6aca93aa6e" InformativeScreenshot="2efce906e2f95923e4ba15e0cfef3341" Selector="&lt;wnd app='chrome.exe' omit:cls='Chrome_WidgetWin_1' title='Restore pages?' /&gt;">
                             <ui:Target.TimeoutMS>
@@ -305,7 +307,7 @@
                     <Sequence DisplayName="" sap2010:WorkflowViewState.IdRef="Sequence_97" />
                   </If.Else>
                 </If>
-                <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="1224.6666666666667,53.333333333333336" sap2010:WorkflowViewState.IdRef="CommentOut_10">
+                <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="1225,52" sap2010:WorkflowViewState.IdRef="CommentOut_10">
                   <ui:CommentOut.Body>
                     <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="450,218" sap2010:WorkflowViewState.IdRef="Sequence_68">
                       <sap:WorkflowViewStateService.ViewState>
@@ -313,7 +315,7 @@
                           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
-                      <ui:UiElementExists DisplayName="Element Exists search" Exists="[isPesquisaCarregada]" sap:VirtualizedContainerService.HintSize="388,107.33333333333333" sap2010:WorkflowViewState.IdRef="UiElementExists_1">
+                      <ui:UiElementExists DisplayName="Element Exists search" Exists="[isPesquisaCarregada]" sap:VirtualizedContainerService.HintSize="388,107" sap2010:WorkflowViewState.IdRef="UiElementExists_1">
                         <ui:UiElementExists.Target>
                           <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="c55d4806-ffeb-4ec6-a4b3-5e4094a428c2" InformativeScreenshot="c201a83a1200db44fcd8c76fa25c6801" Selector="&lt;html app='chrome.exe' /&gt;&lt;webctrl id='sysparm_search' tag='INPUT' /&gt;" TimeoutMS="[CInt(in_Config(&quot;TimeoutMedium&quot;).ToString)]" WaitForReady="COMPLETE" />
                         </ui:UiElementExists.Target>
@@ -327,28 +329,87 @@
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
                 </ui:CommentOut>
-                <ui:UiElementExists DisplayName="Element Exists search" Exists="[isPesquisaCarregada]" sap:VirtualizedContainerService.HintSize="1224.6666666666667,107.33333333333333" sap2010:WorkflowViewState.IdRef="UiElementExists_12">
+                <Sequence sap2010:Annotation.AnnotationText="[FIX] 21/11/2024: Tratativa para novo pop-up que surgiu" sap:VirtualizedContainerService.HintSize="1225,666" sap2010:WorkflowViewState.IdRef="Sequence_123">
+                  <Sequence.Variables>
+                    <Variable x:TypeArguments="x:Boolean" Name="isAnalyticsOpen" />
+                  </Sequence.Variables>
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <ui:UiElementExists DisplayName="Element Exists 'DIV'" Exists="[isAnalyticsOpen]" sap:VirtualizedContainerService.HintSize="410,107" sap2010:WorkflowViewState.IdRef="UiElementExists_18">
+                    <ui:UiElementExists.Target>
+                      <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="8fa25928-6db9-4a8a-8255-5053564a0f45" InformativeScreenshot="a03cc3e7468681e2d8e45c5ef80d25da" Selector="&lt;webctrl tag='MACROPONENT*' /&gt;&lt;webctrl shadowhostid='' tag='SN-CANVAS-UCM' /&gt;&lt;webctrl shadowhostid='' tag='NOW-MODAL' /&gt;&lt;webctrl aria-role='dialog' css-selector='div&amp;gt;div' shadowhostid='' tag='DIV' class='now-modal -md is-opened' /&gt;&lt;webctrl aria-role='document' shadowhostid='' tag='DIV' visibleinnertext='Enable Analytics' /&gt;">
+                        <ui:Target.TimeoutMS>
+                          <InArgument x:TypeArguments="x:Int32" />
+                        </ui:Target.TimeoutMS>
+                        <ui:Target.WaitForReady>
+                          <InArgument x:TypeArguments="ui:WaitForReady" />
+                        </ui:Target.WaitForReady>
+                      </ui:Target>
+                    </ui:UiElementExists.Target>
+                  </ui:UiElementExists>
+                  <If Condition="[isAnalyticsOpen]" sap:VirtualizedContainerService.HintSize="410,377" sap2010:WorkflowViewState.IdRef="If_28">
+                    <If.Then>
+                      <Sequence sap:VirtualizedContainerService.HintSize="376,195" sap2010:WorkflowViewState.IdRef="Sequence_124">
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                        <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'SVG'" sap:VirtualizedContainerService.HintSize="334,107" sap2010:WorkflowViewState.IdRef="Click_57" KeyModifiers="None" MouseButton="BTN_LEFT">
+                          <ui:Click.CursorPosition>
+                            <ui:CursorPosition Position="Center">
+                              <ui:CursorPosition.OffsetX>
+                                <InArgument x:TypeArguments="x:Int32" />
+                              </ui:CursorPosition.OffsetX>
+                              <ui:CursorPosition.OffsetY>
+                                <InArgument x:TypeArguments="x:Int32" />
+                              </ui:CursorPosition.OffsetY>
+                            </ui:CursorPosition>
+                          </ui:Click.CursorPosition>
+                          <ui:Click.Target>
+                            <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="537306f6-7697-46b9-ab60-af52b25f6879" InformativeScreenshot="5c02a3b272bb11b53ee9b6a773249ae0" Selector="&lt;webctrl tag='MACROPONENT*' /&gt;&lt;webctrl shadowhostid='' tag='SN-CANVAS-UCM' /&gt;&lt;webctrl shadowhostid='' tag='NOW-MODAL' /&gt;&lt;webctrl id='now-modal-close-button' shadowhostid='' tag='NOW-BUTTON-ICONIC' /&gt;&lt;webctrl shadowhostid='now-modal-close-button' tag='NOW-ICON' /&gt;&lt;webctrl shadowhostid='' tag='path' /&gt;">
+                              <ui:Target.TimeoutMS>
+                                <InArgument x:TypeArguments="x:Int32" />
+                              </ui:Target.TimeoutMS>
+                              <ui:Target.WaitForReady>
+                                <InArgument x:TypeArguments="ui:WaitForReady" />
+                              </ui:Target.WaitForReady>
+                            </ui:Target>
+                          </ui:Click.Target>
+                        </ui:Click>
+                      </Sequence>
+                    </If.Then>
+                    <If.Else>
+                      <Sequence sap2010:WorkflowViewState.IdRef="Sequence_125" />
+                    </If.Else>
+                  </If>
+                </Sequence>
+                <ui:UiElementExists DisplayName="Element Exists search" Exists="[isPesquisaCarregada]" sap:VirtualizedContainerService.HintSize="1225,107" sap2010:WorkflowViewState.IdRef="UiElementExists_12">
                   <ui:UiElementExists.Target>
                     <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="c55d4806-ffeb-4ec6-a4b3-5e4094a428c2" InformativeScreenshot="c6f1bb7bc1609d8f3aaaaa1bb5d18f22" Selector="&lt;webctrl tag='MACROPONENT*' /&gt;&lt;webctrl shadowhostid='' tag='SN-POLARIS-LAYOUT' /&gt;&lt;webctrl shadowhostid='' tag='SN-POLARIS-HEADER' /&gt;&lt;webctrl shadowhostid='' tag='SN-SEARCH-INPUT-WRAPPER' /&gt;&lt;webctrl shadowhostid='' tag='SN-COMPONENT-WORKSPACE-GLOBAL-SEARCH-TYPEAHEAD' /&gt;&lt;webctrl id='sncwsgs-typeahead-input' shadowhostid='' tag='INPUT' /&gt;" TimeoutMS="[CInt(in_Config(&quot;TimeoutMedium&quot;).ToString)]" WaitForReady="COMPLETE" />
                   </ui:UiElementExists.Target>
                 </ui:UiElementExists>
-                <If Condition="[isPesquisaCarregada]" DisplayName="Se o input de pesquisa tiver carregado" sap:VirtualizedContainerService.HintSize="1224.6666666666667,1120" sap2010:WorkflowViewState.IdRef="If_1">
+                <If Condition="[isPesquisaCarregada]" DisplayName="Se o input de pesquisa tiver carregado" sap:VirtualizedContainerService.HintSize="1225,1113" sap2010:WorkflowViewState.IdRef="If_1">
                   <If.Then>
-                    <Sequence sap:VirtualizedContainerService.HintSize="376,936.6666666666666" sap2010:WorkflowViewState.IdRef="Sequence_57">
+                    <Sequence sap:VirtualizedContainerService.HintSize="376,931" sap2010:WorkflowViewState.IdRef="Sequence_57">
                       <sap:WorkflowViewStateService.ViewState>
                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
                           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
-                      <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="334,53.333333333333336" sap2010:WorkflowViewState.IdRef="CommentOut_11">
+                      <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="334,52" sap2010:WorkflowViewState.IdRef="CommentOut_11">
                         <ui:CommentOut.Body>
-                          <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="450,268" sap2010:WorkflowViewState.IdRef="Sequence_69">
+                          <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="450,266" sap2010:WorkflowViewState.IdRef="Sequence_69">
                             <sap:WorkflowViewStateService.ViewState>
                               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                               </scg:Dictionary>
                             </sap:WorkflowViewStateService.ViewState>
-                            <ui:TypeInto ClickBeforeTyping="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" Activate="True" AlterIfDisabled="True" DelayBefore="[CInt(in_Config(&quot;DelayMedium&quot;).ToString)]" DisplayName="Type Into search" EmptyField="True" sap:VirtualizedContainerService.HintSize="388,157.33333333333334" sap2010:WorkflowViewState.IdRef="TypeInto_1" SimulateType="True" Text="[in_Processo]">
+                            <ui:TypeInto ClickBeforeTyping="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" Activate="True" AlterIfDisabled="True" DelayBefore="[CInt(in_Config(&quot;DelayMedium&quot;).ToString)]" DisplayName="Type Into search" EmptyField="True" sap:VirtualizedContainerService.HintSize="388,155" sap2010:WorkflowViewState.IdRef="TypeInto_1" SimulateType="True" Text="[in_Processo]">
                               <ui:TypeInto.Target>
                                 <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="dbeb2012-575e-499a-8133-9e9286abfeb7" InformativeScreenshot="c201a83a1200db44fcd8c76fa25c6801" Selector="&lt;html app='chrome.exe' /&gt;&lt;webctrl id='sysparm_search' tag='INPUT' /&gt;" WaitForReady="COMPLETE">
                                   <ui:Target.TimeoutMS>
@@ -366,7 +427,7 @@
                           </scg:Dictionary>
                         </sap:WorkflowViewStateService.ViewState>
                       </ui:CommentOut>
-                      <ui:Click DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" AlterIfDisabled="True" ClickType="CLICK_SINGLE" DisplayName="Click 'INPUT  sncwsgs-typeahea...'" sap:VirtualizedContainerService.HintSize="334,107.33333333333333" sap2010:WorkflowViewState.IdRef="Click_55" KeyModifiers="None" MouseButton="BTN_LEFT">
+                      <ui:Click DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" AlterIfDisabled="True" ClickType="CLICK_SINGLE" DisplayName="Click 'INPUT  sncwsgs-typeahea...'" sap:VirtualizedContainerService.HintSize="334,107" sap2010:WorkflowViewState.IdRef="Click_55" KeyModifiers="None" MouseButton="BTN_LEFT">
                         <ui:Click.CursorPosition>
                           <ui:CursorPosition Position="Center">
                             <ui:CursorPosition.OffsetX>
@@ -388,8 +449,8 @@
                           </ui:Target>
                         </ui:Click.Target>
                       </ui:Click>
-                      <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="334,143.33333333333334" sap2010:WorkflowViewState.IdRef="LogMessage_26" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[&quot;Caixa de pesquisa localizada. Realizando a busca pelo processo: &quot;+in_Processo]" />
-                      <ui:TypeInto ClickBeforeTyping="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" SimulateType="{x:Null}" Activate="True" AlterIfDisabled="True" DelayBefore="[CInt(in_Config(&quot;DelayMedium&quot;).ToString)]" DisplayName="Type Into search" EmptyField="True" sap:VirtualizedContainerService.HintSize="334,156.66666666666666" sap2010:WorkflowViewState.IdRef="TypeInto_18" SendWindowMessages="True" Text="[in_Processo]">
+                      <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="334,141" sap2010:WorkflowViewState.IdRef="LogMessage_26" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[&quot;Caixa de pesquisa localizada. Realizando a busca pelo processo: &quot;+in_Processo]" />
+                      <ui:TypeInto ClickBeforeTyping="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" SimulateType="{x:Null}" Activate="True" AlterIfDisabled="True" DelayBefore="[CInt(in_Config(&quot;DelayMedium&quot;).ToString)]" DisplayName="Type Into search" EmptyField="True" sap:VirtualizedContainerService.HintSize="334,155" sap2010:WorkflowViewState.IdRef="TypeInto_18" SendWindowMessages="True" Text="[in_Processo]">
                         <ui:TypeInto.Target>
                           <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="dbeb2012-575e-499a-8133-9e9286abfeb7" InformativeScreenshot="0b549c7bee52a3cb05f39aeb6ed7926d" Selector="&lt;webctrl tag='MACROPONENT*' /&gt;&lt;webctrl shadowhostid='' tag='SN-POLARIS-LAYOUT' /&gt;&lt;webctrl shadowhostid='' tag='SN-POLARIS-HEADER' /&gt;&lt;webctrl shadowhostid='' tag='SN-SEARCH-INPUT-WRAPPER' /&gt;&lt;webctrl shadowhostid='' tag='SN-COMPONENT-WORKSPACE-GLOBAL-SEARCH-TYPEAHEAD' /&gt;&lt;webctrl id='sncwsgs-typeahead-input' shadowhostid='' tag='INPUT' /&gt;" WaitForReady="COMPLETE">
                             <ui:Target.TimeoutMS>

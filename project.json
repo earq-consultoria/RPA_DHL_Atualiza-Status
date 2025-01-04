@@ -3,19 +3,19 @@
   "description": "Parte do projeto dhl dataentry, robô que atualiza os status das tasks no requestit.",
   "main": "Main.xaml",
   "dependencies": {
-    "dhl-dtentry-oracle-library_Windows": "[1.2.13]",
-    "UiPath.Credentials.Activities": "[2.1.0]",
-    "UiPath.Excel.Activities": "[2.24.3]",
-    "UiPath.Mail.Activities": "[1.24.2]",
-    "UiPath.System.Activities": "[24.10.6]",
-    "UiPath.UIAutomation.Activities": "[24.10.7]",
-    "UiPath.WebAPI.Activities": "[1.21.1]"
+    "dhl-dtentry-oracle-library_Windows": "[1.2.16]",
+    "UiPath.Credentials.Activities": "[2.0.0]",
+    "UiPath.Excel.Activities": "[2.20.2]",
+    "UiPath.Mail.Activities": "[1.20.2]",
+    "UiPath.System.Activities": "[23.4.3]",
+    "UiPath.UIAutomation.Activities": "[23.4.7]",
+    "UiPath.WebAPI.Activities": "[1.16.2]"
   },
   "webServices": [],
   "entitiesStores": [],
   "schemaVersion": "4.0",
   "studioVersion": "19.10.2.0",
-  "projectVersion": "2.3.12",
+  "projectVersion": "2.3.13",
   "runtimeOptions": {
     "autoDispose": false,
     "netFrameworkLazyLoading": false,

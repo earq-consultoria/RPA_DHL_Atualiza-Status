@@ -40,7 +40,7 @@
   <VisualBasic.Settings>
     <x:Null />
   </VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>1411,30803</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>1412,31296</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>Atualiza_Status_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="50">
@@ -143,7 +143,7 @@
       <x:Boolean x:Key="ShouldExpandAll">True</x:Boolean>
     </scg:Dictionary>
   </sap:WorkflowViewStateService.ViewState>
-  <Sequence sap2010:Annotation.AnnotationText="Processo que atualiza o status do request IT." DisplayName="Atualiza Status" sap:VirtualizedContainerService.HintSize="1421,30738" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence sap2010:Annotation.AnnotationText="Processo que atualiza o status do request IT." DisplayName="Atualiza Status" sap:VirtualizedContainerService.HintSize="1422,31231.333333333332" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:Boolean" Name="isPesquisaCarregada" />
       <Variable x:TypeArguments="x:Boolean" Name="isJanelaSAVECarregada" />
@@ -156,9 +156,9 @@
         <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="1359,52" sap2010:WorkflowViewState.IdRef="CommentOut_2">
+    <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="1360,54" sap2010:WorkflowViewState.IdRef="CommentOut_2">
       <ui:CommentOut.Body>
-        <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="450,81" sap2010:WorkflowViewState.IdRef="Sequence_18">
+        <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="450,84.66666666666667" sap2010:WorkflowViewState.IdRef="Sequence_18">
           <sap:WorkflowViewStateService.ViewState>
             <scg:Dictionary x:TypeArguments="x:String, x:Object">
               <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -209,8 +209,8 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </ui:CommentOut>
-    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="1359,141" sap2010:WorkflowViewState.IdRef="LogMessage_24" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[&quot;Abrindo navegador&quot;]" />
-    <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="1359,30323" sap2010:WorkflowViewState.IdRef="TryCatch_1">
+    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="1360,144.66666666666666" sap2010:WorkflowViewState.IdRef="LogMessage_24" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[&quot;Abrindo navegador&quot;]" />
+    <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="1360,30811.333333333332" sap2010:WorkflowViewState.IdRef="TryCatch_1">
       <TryCatch.Variables>
         <Variable x:TypeArguments="ui:Browser" Name="browser" />
       </TryCatch.Variables>
@@ -221,13 +221,13 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
       <TryCatch.Try>
-        <ui:OpenBrowser AutomaticallyDownloadWebDriver="{x:Null}" CommunicationMethod="{x:Null}" Hidden="{x:Null}" NewSession="{x:Null}" Private="{x:Null}" BrowserType="Chrome" DisplayName="Open Browser" sap:VirtualizedContainerService.HintSize="1321,21976" sap2010:WorkflowViewState.IdRef="OpenBrowser_1" UiBrowser="[browser]" Url="[in_Config(&quot;RequestItUrl&quot;+&quot;_&quot;+in_Config(&quot;Mode&quot;).ToString).ToString]">
+        <ui:OpenBrowser AutomaticallyDownloadWebDriver="{x:Null}" CommunicationMethod="{x:Null}" Hidden="{x:Null}" NewSession="{x:Null}" Private="{x:Null}" BrowserType="Chrome" DisplayName="Open Browser" sap:VirtualizedContainerService.HintSize="1321.3333333333333,22454" sap2010:WorkflowViewState.IdRef="OpenBrowser_1" UiBrowser="[browser]" Url="[in_Config(&quot;RequestItUrl&quot;+&quot;_&quot;+in_Config(&quot;Mode&quot;).ToString).ToString]">
           <ui:OpenBrowser.Body>
             <ActivityAction x:TypeArguments="x:Object">
               <ActivityAction.Argument>
                 <DelegateInArgument x:TypeArguments="x:Object" Name="ContextTarget" />
               </ActivityAction.Argument>
-              <Sequence sap:VirtualizedContainerService.HintSize="1287,21851" sap2010:WorkflowViewState.IdRef="Sequence_12">
+              <Sequence sap:VirtualizedContainerService.HintSize="1287.3333333333333,22326.666666666668" sap2010:WorkflowViewState.IdRef="Sequence_12">
                 <Sequence.Variables>
                   <Variable x:TypeArguments="x:String" Name="isTaskReadOnly" />
                   <Variable x:TypeArguments="x:String" Name="statusRequestIt" />
@@ -247,9 +247,9 @@
                     <x:Boolean x:Key="IsPinned">False</x:Boolean>
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
-                <ui:MaximizeWindow Window="{x:Null}" DisplayName="Maximize Window" sap:VirtualizedContainerService.HintSize="1225,25" sap2010:WorkflowViewState.IdRef="MaximizeWindow_1" />
-                <Delay Duration="00:00:10" sap:VirtualizedContainerService.HintSize="1225,90" sap2010:WorkflowViewState.IdRef="Delay_1" />
-                <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="1225,141" sap2010:WorkflowViewState.IdRef="LogMessage_25" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[&quot;Verificando a existencia de RestorePages&quot;]" />
+                <ui:MaximizeWindow Window="{x:Null}" DisplayName="Maximize Window" sap:VirtualizedContainerService.HintSize="1225.3333333333333,25.333333333333332" sap2010:WorkflowViewState.IdRef="MaximizeWindow_1" />
+                <Delay Duration="00:00:10" sap:VirtualizedContainerService.HintSize="1225.3333333333333,92" sap2010:WorkflowViewState.IdRef="Delay_1" />
+                <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="1225.3333333333333,144.66666666666666" sap2010:WorkflowViewState.IdRef="LogMessage_25" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[&quot;Verificando a existencia de RestorePages&quot;]" />
                 <ui:UiElementExists DisplayName="Element Exists 'chrome.exe Restore'" Exists="[RestorePopUp]" sap:VirtualizedContainerService.HintSize="1225,107" sap2010:WorkflowViewState.IdRef="UiElementExists_6">
                   <ui:UiElementExists.Target>
                     <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="95b25732-8d91-4a8f-8e62-7d9778976444" InformativeScreenshot="2efce906e2f95923e4ba15e0cfef3341" Selector="&lt;wnd app='chrome.exe' omit:cls='Chrome_WidgetWin_1' title='Restore pages?' /&gt;" TimeoutMS="1000">
@@ -620,7 +620,7 @@
                     </Sequence>
                   </If.Else>
                 </If>
-                <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="1224.6666666666667,53.333333333333336" sap2010:WorkflowViewState.IdRef="CommentOut_12">
+                <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="1225.3333333333333,54" sap2010:WorkflowViewState.IdRef="CommentOut_12">
                   <ui:CommentOut.Body>
                     <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="450,378.6666666666667" sap2010:WorkflowViewState.IdRef="Sequence_70">
                       <sap:WorkflowViewStateService.ViewState>
@@ -657,8 +657,8 @@
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
                 </ui:CommentOut>
-                <Delay Duration="00:00:05" sap:VirtualizedContainerService.HintSize="1224.6666666666667,91.33333333333333" sap2010:WorkflowViewState.IdRef="Delay_20" />
-                <ui:GetAttribute ContinueOnError="{x:Null}" sap2010:Annotation.AnnotationText="Captura o valor que está no atributo aastatedo combobox. Se conter &quot;unavailable&quot; então a task está em um status na qual não pode ser alterada." Attribute="aastate" DisplayName="Get Attribute aastate" sap:VirtualizedContainerService.HintSize="1224.6666666666667,264.6666666666667" sap2010:WorkflowViewState.IdRef="GetAttribute_14">
+                <Delay Duration="00:00:05" sap:VirtualizedContainerService.HintSize="1225.3333333333333,92" sap2010:WorkflowViewState.IdRef="Delay_20" />
+                <ui:GetAttribute ContinueOnError="{x:Null}" sap2010:Annotation.AnnotationText="Captura o valor que está no atributo aastatedo combobox. Se conter &quot;unavailable&quot; então a task está em um status na qual não pode ser alterada." Attribute="aastate" DisplayName="Get Attribute aastate" sap:VirtualizedContainerService.HintSize="1225.3333333333333,268" sap2010:WorkflowViewState.IdRef="GetAttribute_14">
                   <ui:GetAttribute.Result>
                     <OutArgument x:TypeArguments="x:String">[isTaskReadOnly]</OutArgument>
                   </ui:GetAttribute.Result>
@@ -898,7 +898,7 @@
                   </ui:RetryScope.Condition>
                 </ui:RetryScope>
                 <Delay Duration="00:00:04" sap:VirtualizedContainerService.HintSize="1224.6666666666667,91.33333333333333" sap2010:WorkflowViewState.IdRef="Delay_2" />
-                <Sequence sap2010:Annotation.AnnotationText="Entra na pasta do chamado e pega o print de erro pra fazer o upload nos casos de cancelado e suspenso" DisplayName="Update Print Erro" sap:VirtualizedContainerService.HintSize="1224.6666666666667,7117.333333333333" sap2010:WorkflowViewState.IdRef="Sequence_21">
+                <Sequence sap2010:Annotation.AnnotationText="Entra na pasta do chamado e pega o print de erro pra fazer o upload nos casos de cancelado e suspenso" DisplayName="Update Print Erro" sap:VirtualizedContainerService.HintSize="1225.3333333333333,7576.666666666667" sap2010:WorkflowViewState.IdRef="Sequence_21">
                   <Sequence.Variables>
                     <Variable x:TypeArguments="scg:IList(x:String)" Name="listadocid" />
                     <Variable x:TypeArguments="x:String" Name="pathprint" />
@@ -913,16 +913,16 @@
                       <x:Boolean x:Key="IsPinned">False</x:Boolean>
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
-                  <If Condition="[in_StatusRequestIt=&quot;CANCELADO&quot; Or in_StatusRequestIt=&quot;SUSPENSO&quot; Or (in_StatusRequestIt=&quot;ENTREGUE&quot; and in_Eshare=&quot;1&quot;)]" sap:VirtualizedContainerService.HintSize="842,6976" sap2010:WorkflowViewState.IdRef="If_10">
+                  <If Condition="[in_StatusRequestIt=&quot;CANCELADO&quot; Or in_StatusRequestIt=&quot;SUSPENSO&quot; Or (in_StatusRequestIt=&quot;ENTREGUE&quot; and in_Eshare=&quot;1&quot;)]" sap:VirtualizedContainerService.HintSize="842,7435.333333333333" sap2010:WorkflowViewState.IdRef="If_10">
                     <If.Then>
-                      <Sequence sap:VirtualizedContainerService.HintSize="808,6792.666666666667" sap2010:WorkflowViewState.IdRef="Sequence_28">
+                      <Sequence sap:VirtualizedContainerService.HintSize="808,7251.333333333333" sap2010:WorkflowViewState.IdRef="Sequence_28">
                         <sap:WorkflowViewStateService.ViewState>
                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
                             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                             <x:Boolean x:Key="IsPinned">False</x:Boolean>
                           </scg:Dictionary>
                         </sap:WorkflowViewStateService.ViewState>
-                        <Assign sap:VirtualizedContainerService.HintSize="766,84.66666666666667" sap2010:WorkflowViewState.IdRef="Assign_16">
+                        <Assign sap:VirtualizedContainerService.HintSize="766,85.33333333333333" sap2010:WorkflowViewState.IdRef="Assign_16">
                           <Assign.To>
                             <OutArgument x:TypeArguments="scg:IList(x:String)">[listadocid]</OutArgument>
                           </Assign.To>
@@ -930,7 +930,7 @@
                             <InArgument x:TypeArguments="scg:IList(x:String)">[New List(of String)]</InArgument>
                           </Assign.Value>
                         </Assign>
-                        <Assign sap:VirtualizedContainerService.HintSize="766,84.66666666666667" sap2010:WorkflowViewState.IdRef="Assign_17">
+                        <Assign sap:VirtualizedContainerService.HintSize="766,85.33333333333333" sap2010:WorkflowViewState.IdRef="Assign_17">
                           <Assign.To>
                             <OutArgument x:TypeArguments="scg:IList(x:String)">[listadocid]</OutArgument>
                           </Assign.To>
@@ -938,20 +938,20 @@
                             <InArgument x:TypeArguments="scg:IList(x:String)">[Split(in_IdsDocumento,",")]</InArgument>
                           </Assign.Value>
                         </Assign>
-                        <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="766,143.33333333333334" sap2010:WorkflowViewState.IdRef="LogMessage_8" Level="Info" Message="[&quot;Caso de &quot;+in_StatusRequestIt+&quot; inicial upload do print de evidência.&quot;]" />
-                        <ui:ForEach x:TypeArguments="x:String" CurrentIndex="{x:Null}" DisplayName="For Each id" sap:VirtualizedContainerService.HintSize="766,6272.666666666667" sap2010:WorkflowViewState.IdRef="ForEach`1_2" Values="[listadocid]">
+                        <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="766,144.66666666666666" sap2010:WorkflowViewState.IdRef="LogMessage_8" Level="Info" Message="[&quot;Caso de &quot;+in_StatusRequestIt+&quot; inicial upload do print de evidência.&quot;]" />
+                        <ui:ForEach x:TypeArguments="x:String" CurrentIndex="{x:Null}" DisplayName="For Each id" sap:VirtualizedContainerService.HintSize="766,6728.666666666667" sap2010:WorkflowViewState.IdRef="ForEach`1_2" Values="[listadocid]">
                           <ui:ForEach.Body>
                             <ActivityAction x:TypeArguments="x:String">
                               <ActivityAction.Argument>
                                 <DelegateInArgument x:TypeArguments="x:String" Name="id" />
                               </ActivityAction.Argument>
-                              <Sequence sap:VirtualizedContainerService.HintSize="732,6135.333333333333" sap2010:WorkflowViewState.IdRef="Sequence_27">
+                              <Sequence sap:VirtualizedContainerService.HintSize="732,6538.666666666667" sap2010:WorkflowViewState.IdRef="Sequence_27">
                                 <sap:WorkflowViewStateService.ViewState>
                                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                     <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                   </scg:Dictionary>
                                 </sap:WorkflowViewStateService.ViewState>
-                                <ui:MultipleAssign DisplayName="Multiple Assign" sap:VirtualizedContainerService.HintSize="690,116.66666666666667" sap2010:WorkflowViewState.IdRef="MultipleAssign_1">
+                                <ui:MultipleAssign DisplayName="Multiple Assign" sap:VirtualizedContainerService.HintSize="690,100.66666666666667" sap2010:WorkflowViewState.IdRef="MultipleAssign_1">
                                   <ui:MultipleAssign.AssignOperations>
                                     <scg:List x:TypeArguments="ui:AssignOperation" Capacity="4">
                                       <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_4">
@@ -965,16 +965,16 @@
                                     </scg:List>
                                   </ui:MultipleAssign.AssignOperations>
                                 </ui:MultipleAssign>
-                                <ui:PathExists Resource="{x:Null}" DisplayName="Path Exists" Exists="[pathexiste]" sap:VirtualizedContainerService.HintSize="690,117.33333333333333" sap2010:WorkflowViewState.IdRef="PathExists_1" Path="[pathprint]" PathType="Folder" />
-                                <If Condition="[pathexiste]" sap:VirtualizedContainerService.HintSize="690,5734" sap2010:WorkflowViewState.IdRef="If_11">
+                                <ui:PathExists Resource="{x:Null}" DisplayName="Path Exists" Exists="[pathexiste]" sap:VirtualizedContainerService.HintSize="690,118.66666666666667" sap2010:WorkflowViewState.IdRef="PathExists_1" Path="[pathprint]" PathType="Folder" />
+                                <If Condition="[pathexiste]" sap:VirtualizedContainerService.HintSize="690,6152" sap2010:WorkflowViewState.IdRef="If_11">
                                   <If.Then>
-                                    <Sequence sap:VirtualizedContainerService.HintSize="656,5550.666666666667" sap2010:WorkflowViewState.IdRef="Sequence_26">
+                                    <Sequence sap:VirtualizedContainerService.HintSize="656,5968" sap2010:WorkflowViewState.IdRef="Sequence_26">
                                       <sap:WorkflowViewStateService.ViewState>
                                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                         </scg:Dictionary>
                                       </sap:WorkflowViewStateService.ViewState>
-                                      <Sequence DisplayName="Captura o Arquivo mais recente" sap:VirtualizedContainerService.HintSize="614,288.6666666666667" sap2010:WorkflowViewState.IdRef="Sequence_24">
+                                      <Sequence DisplayName="Captura o Arquivo mais recente" sap:VirtualizedContainerService.HintSize="614,290" sap2010:WorkflowViewState.IdRef="Sequence_24">
                                         <Sequence.Variables>
                                           <Variable x:TypeArguments="x:String" Name="fileexiste" />
                                         </Sequence.Variables>
@@ -983,7 +983,7 @@
                                             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                           </scg:Dictionary>
                                         </sap:WorkflowViewStateService.ViewState>
-                                        <Assign sap:VirtualizedContainerService.HintSize="434,84.66666666666667" sap2010:WorkflowViewState.IdRef="Assign_20">
+                                        <Assign sap:VirtualizedContainerService.HintSize="434,85.33333333333333" sap2010:WorkflowViewState.IdRef="Assign_20">
                                           <Assign.To>
                                             <OutArgument x:TypeArguments="x:String">[filenew]</OutArgument>
                                           </Assign.To>
@@ -991,15 +991,15 @@
                                             <InArgument x:TypeArguments="x:String">[Directory.GetFiles(pathprint,"*.png").OrderByDescending (Function (d) New FileInfo (d) .CreationTime) .Tolist (0)]</InArgument>
                                           </Assign.Value>
                                         </Assign>
-                                        <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="434,53.333333333333336" sap2010:WorkflowViewState.IdRef="CommentOut_36">
+                                        <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="434,54" sap2010:WorkflowViewState.IdRef="CommentOut_36">
                                           <ui:CommentOut.Body>
-                                            <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="534,194" sap2010:WorkflowViewState.IdRef="Sequence_114">
+                                            <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="534,195.33333333333334" sap2010:WorkflowViewState.IdRef="Sequence_114">
                                               <sap:WorkflowViewStateService.ViewState>
                                                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                                 </scg:Dictionary>
                                               </sap:WorkflowViewStateService.ViewState>
-                                              <Sequence DisplayName="[NOVO] - Verifica se existe arquivo de print na pasta" sap:VirtualizedContainerService.HintSize="450,83.33333333333333" sap2010:WorkflowViewState.IdRef="Sequence_113">
+                                              <Sequence DisplayName="[NOVO] - Verifica se existe arquivo de print na pasta" sap:VirtualizedContainerService.HintSize="450,84.66666666666667" sap2010:WorkflowViewState.IdRef="Sequence_113">
                                                 <sap:WorkflowViewStateService.ViewState>
                                                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                     <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -1032,14 +1032,14 @@
                                           </sap:WorkflowViewStateService.ViewState>
                                         </ui:CommentOut>
                                       </Sequence>
-                                      <Sequence DisplayName="Upload no ServiceNow de 1 Print" sap:VirtualizedContainerService.HintSize="614,4953.333333333333" sap2010:WorkflowViewState.IdRef="Sequence_25">
+                                      <Sequence DisplayName="Upload no ServiceNow de 1 Print" sap:VirtualizedContainerService.HintSize="614,5369.333333333333" sap2010:WorkflowViewState.IdRef="Sequence_25">
                                         <sap:WorkflowViewStateService.ViewState>
                                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                             <x:Boolean x:Key="IsPinned">False</x:Boolean>
                                           </scg:Dictionary>
                                         </sap:WorkflowViewStateService.ViewState>
-                                        <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="552,53.333333333333336" sap2010:WorkflowViewState.IdRef="CommentOut_15">
+                                        <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="552,54" sap2010:WorkflowViewState.IdRef="CommentOut_15">
                                           <ui:CommentOut.Body>
                                             <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="450,218" sap2010:WorkflowViewState.IdRef="Sequence_73">
                                               <sap:WorkflowViewStateService.ViewState>
@@ -1100,7 +1100,7 @@
                                             </ui:Target>
                                           </ui:Click.Target>
                                         </ui:Click>
-                                        <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="552,53.333333333333336" sap2010:WorkflowViewState.IdRef="CommentOut_16">
+                                        <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="552,54" sap2010:WorkflowViewState.IdRef="CommentOut_16">
                                           <ui:CommentOut.Body>
                                             <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="450,218" sap2010:WorkflowViewState.IdRef="Sequence_74">
                                               <sap:WorkflowViewStateService.ViewState>
@@ -1136,15 +1136,15 @@
                                             </scg:Dictionary>
                                           </sap:WorkflowViewStateService.ViewState>
                                         </ui:CommentOut>
-                                        <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="552,53.333333333333336" sap2010:WorkflowViewState.IdRef="CommentOut_39">
+                                        <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="552,54" sap2010:WorkflowViewState.IdRef="CommentOut_39">
                                           <ui:CommentOut.Body>
-                                            <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="450,262" sap2010:WorkflowViewState.IdRef="Sequence_119">
+                                            <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="450,263.3333333333333" sap2010:WorkflowViewState.IdRef="Sequence_119">
                                               <sap:WorkflowViewStateService.ViewState>
                                                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                                 </scg:Dictionary>
                                               </sap:WorkflowViewStateService.ViewState>
-                                              <ui:Click DelayBefore="{x:Null}" DelayMS="{x:Null}" SimulateClick="{x:Null}" AlterIfDisabled="True" sap2010:Annotation.AnnotationText="03/09/2024: comando removido por erro de seletor. O RPA não encontra o elemento." ClickType="CLICK_SINGLE" DisplayName="Click 'INPUT  attachFile'" sap:VirtualizedContainerService.HintSize="388,151.33333333333334" sap2010:WorkflowViewState.IdRef="Click_38" KeyModifiers="None" MouseButton="BTN_LEFT" SendWindowMessages="True">
+                                              <ui:Click DelayBefore="{x:Null}" DelayMS="{x:Null}" SimulateClick="{x:Null}" AlterIfDisabled="True" sap2010:Annotation.AnnotationText="03/09/2024: comando removido por erro de seletor. O RPA não encontra o elemento." ClickType="CLICK_SINGLE" DisplayName="Click 'INPUT  attachFile'" sap:VirtualizedContainerService.HintSize="388,152.66666666666666" sap2010:WorkflowViewState.IdRef="Click_38" KeyModifiers="None" MouseButton="BTN_LEFT" SendWindowMessages="True">
                                                 <ui:Click.CursorPosition>
                                                   <ui:CursorPosition Position="Center">
                                                     <ui:CursorPosition.OffsetX>
@@ -1177,19 +1177,53 @@
                                             </scg:Dictionary>
                                           </sap:WorkflowViewStateService.ViewState>
                                         </ui:CommentOut>
-                                        <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" sap2010:Annotation.AnnotationText="03/09/2024: comando adicionado para novo seletor." ClickType="CLICK_SINGLE" DisplayName="Click 'INPUT  attachFile'" sap:VirtualizedContainerService.HintSize="552,138" sap2010:WorkflowViewState.IdRef="Click_56" KeyModifiers="None" MouseButton="BTN_LEFT">
-                                          <ui:Click.CursorPosition>
-                                            <ui:CursorPosition Position="Center">
-                                              <ui:CursorPosition.OffsetX>
-                                                <InArgument x:TypeArguments="x:Int32" />
-                                              </ui:CursorPosition.OffsetX>
-                                              <ui:CursorPosition.OffsetY>
-                                                <InArgument x:TypeArguments="x:Int32" />
-                                              </ui:CursorPosition.OffsetY>
-                                            </ui:CursorPosition>
-                                          </ui:Click.CursorPosition>
-                                          <ui:Click.Target>
-                                            <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="08a195ff-e3e4-440e-a23d-c4b32077b3a8" InformativeScreenshot="1bcc076ca6a302899e8cb8792ca3e85f" Selector="&lt;webctrl tag='*' /&gt;&lt;webctrl id='gsft_main' shadowhostid='' tag='IFRAME' /&gt;&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;rendered_body&amp;gt;table&amp;gt;tbody&amp;gt;tr&amp;gt;td&amp;gt;form&amp;gt;table' omit:tableRow='2' tag='TABLE' /&gt;&lt;webctrl omit:tableRow='1' tag='INPUT' /&gt;">
+                                        <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="552,328.6666666666667" sap2010:WorkflowViewState.IdRef="CommentOut_40">
+                                          <ui:CommentOut.Body>
+                                            <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="450,248.66666666666666" sap2010:WorkflowViewState.IdRef="Sequence_126">
+                                              <sap:WorkflowViewStateService.ViewState>
+                                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                </scg:Dictionary>
+                                              </sap:WorkflowViewStateService.ViewState>
+                                              <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" sap2010:Annotation.AnnotationText="03/09/2024: comando adicionado para novo seletor." ClickType="CLICK_SINGLE" DisplayName="Click 'INPUT  attachFile'" sap:VirtualizedContainerService.HintSize="388,138" sap2010:WorkflowViewState.IdRef="Click_56" KeyModifiers="None" MouseButton="BTN_LEFT">
+                                                <ui:Click.CursorPosition>
+                                                  <ui:CursorPosition Position="Center">
+                                                    <ui:CursorPosition.OffsetX>
+                                                      <InArgument x:TypeArguments="x:Int32" />
+                                                    </ui:CursorPosition.OffsetX>
+                                                    <ui:CursorPosition.OffsetY>
+                                                      <InArgument x:TypeArguments="x:Int32" />
+                                                    </ui:CursorPosition.OffsetY>
+                                                  </ui:CursorPosition>
+                                                </ui:Click.CursorPosition>
+                                                <ui:Click.Target>
+                                                  <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="08a195ff-e3e4-440e-a23d-c4b32077b3a8" InformativeScreenshot="1bcc076ca6a302899e8cb8792ca3e85f" Selector="&lt;webctrl tag='*' /&gt;&lt;webctrl id='gsft_main' shadowhostid='' tag='IFRAME' /&gt;&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;rendered_body&amp;gt;table&amp;gt;tbody&amp;gt;tr&amp;gt;td&amp;gt;form&amp;gt;table' omit:tableRow='2' tag='TABLE' /&gt;&lt;webctrl omit:tableRow='1' tag='INPUT' /&gt;">
+                                                    <ui:Target.TimeoutMS>
+                                                      <InArgument x:TypeArguments="x:Int32" />
+                                                    </ui:Target.TimeoutMS>
+                                                    <ui:Target.WaitForReady>
+                                                      <InArgument x:TypeArguments="ui:WaitForReady" />
+                                                    </ui:Target.WaitForReady>
+                                                  </ui:Target>
+                                                </ui:Click.Target>
+                                                <sap:WorkflowViewStateService.ViewState>
+                                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                    <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                                                  </scg:Dictionary>
+                                                </sap:WorkflowViewStateService.ViewState>
+                                              </ui:Click>
+                                            </Sequence>
+                                          </ui:CommentOut.Body>
+                                          <sap:WorkflowViewStateService.ViewState>
+                                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                            </scg:Dictionary>
+                                          </sap:WorkflowViewStateService.ViewState>
+                                        </ui:CommentOut>
+                                        <ui:TypeInto AlterIfDisabled="{x:Null}" ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" SimulateType="{x:Null}" Activate="True" sap2010:Annotation.AnnotationText="[FIX] 05/01/2025: ajustado como RPA navega para anexar arquivos, porque click estava com problema" DisplayName="Seleção para anexar arquivos" sap:VirtualizedContainerService.HintSize="552,182.66666666666666" sap2010:WorkflowViewState.IdRef="TypeInto_23" Text="%%[k(tab)][k(enter)]">
+                                          <ui:TypeInto.Target>
+                                            <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="296c0f65-33dd-4598-9c93-5a5a969a1186" Selector="&lt;webctrl tag='MACROPONENT-F51912F4C700201072B211D4D8C26010' /&gt;&lt;webctrl id='gsft_main' shadowhostid='' tag='IFRAME' /&gt;">
                                               <ui:Target.TimeoutMS>
                                                 <InArgument x:TypeArguments="x:Int32" />
                                               </ui:Target.TimeoutMS>
@@ -1197,14 +1231,14 @@
                                                 <InArgument x:TypeArguments="ui:WaitForReady" />
                                               </ui:Target.WaitForReady>
                                             </ui:Target>
-                                          </ui:Click.Target>
+                                          </ui:TypeInto.Target>
                                           <sap:WorkflowViewStateService.ViewState>
                                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                               <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
                                             </scg:Dictionary>
                                           </sap:WorkflowViewStateService.ViewState>
-                                        </ui:Click>
-                                        <Delay Duration="00:00:06" sap:VirtualizedContainerService.HintSize="552,91.33333333333333" sap2010:WorkflowViewState.IdRef="Delay_8" />
+                                        </ui:TypeInto>
+                                        <Delay Duration="00:00:06" sap:VirtualizedContainerService.HintSize="552,92" sap2010:WorkflowViewState.IdRef="Delay_8" />
                                         <ui:UiElementExists DisplayName="Element Exists 'iexplore.exe Network'" Exists="[isJanelaWindows]" sap:VirtualizedContainerService.HintSize="552,107.33333333333333" sap2010:WorkflowViewState.IdRef="UiElementExists_5">
                                           <ui:UiElementExists.Target>
                                             <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="7ef088c9-a3b4-4380-ab43-2b9f142e248d" InformativeScreenshot="c95a777b48582ab70a555e343a88b265" Selector="&lt;wnd app='chrome.exe' cls='#32770' title='Network Error' /&gt;" TimeoutMS="4000" WaitForReady="COMPLETE" />

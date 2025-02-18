@@ -40,7 +40,7 @@
   <VisualBasic.Settings>
     <x:Null />
   </VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>1086.6666666666667,31676.666666666668</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>1086.6666666666667,32850</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>Atualiza_Status_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="50">
@@ -143,7 +143,7 @@
       <x:Boolean x:Key="ShouldExpandAll">True</x:Boolean>
     </scg:Dictionary>
   </sap:WorkflowViewStateService.ViewState>
-  <Sequence sap2010:Annotation.AnnotationText="Processo que atualiza o status do request IT." DisplayName="Atualiza Status" sap:VirtualizedContainerService.HintSize="1096.6666666666667,31612" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence sap2010:Annotation.AnnotationText="Processo que atualiza o status do request IT." DisplayName="Atualiza Status" sap:VirtualizedContainerService.HintSize="1096.6666666666667,32785.333333333336" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:Boolean" Name="isPesquisaCarregada" />
       <Variable x:TypeArguments="x:Boolean" Name="isJanelaSAVECarregada" />
@@ -158,7 +158,7 @@
     </sap:WorkflowViewStateService.ViewState>
     <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="1034.6666666666667,53.333333333333336" sap2010:WorkflowViewState.IdRef="CommentOut_2">
       <ui:CommentOut.Body>
-        <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="450,84.66666666666667" sap2010:WorkflowViewState.IdRef="Sequence_18">
+        <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="450,83.33333333333333" sap2010:WorkflowViewState.IdRef="Sequence_18">
           <sap:WorkflowViewStateService.ViewState>
             <scg:Dictionary x:TypeArguments="x:String, x:Object">
               <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -210,7 +210,7 @@
       </sap:WorkflowViewStateService.ViewState>
     </ui:CommentOut>
     <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="1034.6666666666667,143.33333333333334" sap2010:WorkflowViewState.IdRef="LogMessage_24" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[&quot;Abrindo navegador&quot;]" />
-    <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="1034.6666666666667,31194" sap2010:WorkflowViewState.IdRef="TryCatch_1">
+    <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="1034.6666666666667,32367.333333333332" sap2010:WorkflowViewState.IdRef="TryCatch_1">
       <TryCatch.Variables>
         <Variable x:TypeArguments="ui:Browser" Name="browser" />
       </TryCatch.Variables>
@@ -221,13 +221,13 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
       <TryCatch.Try>
-        <ui:OpenBrowser AutomaticallyDownloadWebDriver="{x:Null}" CommunicationMethod="{x:Null}" Hidden="{x:Null}" NewSession="{x:Null}" Private="{x:Null}" BrowserType="Chrome" DisplayName="Open Browser" sap:VirtualizedContainerService.HintSize="996,22818.666666666668" sap2010:WorkflowViewState.IdRef="OpenBrowser_1" UiBrowser="[browser]" Url="[in_Config(&quot;RequestItUrl&quot;+&quot;_&quot;+in_Config(&quot;Mode&quot;).ToString).ToString]">
+        <ui:OpenBrowser AutomaticallyDownloadWebDriver="{x:Null}" CommunicationMethod="{x:Null}" Hidden="{x:Null}" NewSession="{x:Null}" Private="{x:Null}" BrowserType="Chrome" DisplayName="Open Browser" sap:VirtualizedContainerService.HintSize="996,22765.333333333332" sap2010:WorkflowViewState.IdRef="OpenBrowser_1" UiBrowser="[browser]" Url="[in_Config(&quot;RequestItUrl&quot;+&quot;_&quot;+in_Config(&quot;Mode&quot;).ToString).ToString]">
           <ui:OpenBrowser.Body>
             <ActivityAction x:TypeArguments="x:Object">
               <ActivityAction.Argument>
                 <DelegateInArgument x:TypeArguments="x:Object" Name="ContextTarget" />
               </ActivityAction.Argument>
-              <Sequence sap:VirtualizedContainerService.HintSize="962,22692" sap2010:WorkflowViewState.IdRef="Sequence_12">
+              <Sequence sap:VirtualizedContainerService.HintSize="962,22598.666666666668" sap2010:WorkflowViewState.IdRef="Sequence_12">
                 <Sequence.Variables>
                   <Variable x:TypeArguments="x:String" Name="isTaskReadOnly" />
                   <Variable x:TypeArguments="x:String" Name="statusRequestIt" />
@@ -1263,7 +1263,7 @@
                                         </ui:UiElementExists>
                                         <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="548,53.333333333333336" sap2010:WorkflowViewState.IdRef="CommentOut_3">
                                           <ui:CommentOut.Body>
-                                            <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="450,324.6666666666667" sap2010:WorkflowViewState.IdRef="Sequence_33">
+                                            <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="450,354" sap2010:WorkflowViewState.IdRef="Sequence_33">
                                               <sap:WorkflowViewStateService.ViewState>
                                                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -2883,7 +2883,7 @@
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
                 </ui:UiElementExists>
-                <If sap2010:Annotation.AnnotationText="Caso a mnensagem de atualização não apareça valida se o STATE foi atualizado com sucesso&#xA;" Condition="[sinalAtualizacao=False]" DisplayName="Caso a mensagem de atualização não aparece valida o campo STATE " sap:VirtualizedContainerService.HintSize="900,1058" sap2010:WorkflowViewState.IdRef="If_7">
+                <If sap2010:Annotation.AnnotationText="Caso a mnensagem de atualização não apareça valida se o STATE foi atualizado com sucesso&#xA;" Condition="[sinalAtualizacao=False]" DisplayName="Caso a mensagem de atualização não aparece valida o campo STATE " sap:VirtualizedContainerService.HintSize="900,964.6666666666666" sap2010:WorkflowViewState.IdRef="If_7">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                       <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
@@ -2892,7 +2892,7 @@
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
                   <If.Then>
-                    <Sequence sap:VirtualizedContainerService.HintSize="510,830.6666666666666" sap2010:WorkflowViewState.IdRef="Sequence_15">
+                    <Sequence sap:VirtualizedContainerService.HintSize="510,737.3333333333334" sap2010:WorkflowViewState.IdRef="Sequence_15">
                       <sap:WorkflowViewStateService.ViewState>
                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
                           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -2950,38 +2950,6 @@
                           </scg:Dictionary>
                         </sap:WorkflowViewStateService.ViewState>
                       </ui:GetAttribute>
-                      <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="468,53.333333333333336" sap2010:WorkflowViewState.IdRef="CommentOut_41">
-                        <ui:CommentOut.Body>
-                          <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="450,315.3333333333333" sap2010:WorkflowViewState.IdRef="Sequence_127">
-                            <sap:WorkflowViewStateService.ViewState>
-                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                              </scg:Dictionary>
-                            </sap:WorkflowViewStateService.ViewState>
-                            <ui:GetAttribute ContinueOnError="{x:Null}" Attribute="selecteditem" DisplayName="Get Attribute 'SELECT  sc_task.state'" sap:VirtualizedContainerService.HintSize="388,204.66666666666666" sap2010:WorkflowViewState.IdRef="GetAttribute_16">
-                              <ui:GetAttribute.Result>
-                                <OutArgument x:TypeArguments="x:String">[status]</OutArgument>
-                              </ui:GetAttribute.Result>
-                              <ui:GetAttribute.Target>
-                                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="73f17fd0-9f7b-4da2-9d14-b6d0f6a7dd1e" InformativeScreenshot="c6f95dfa6846cc2e09a0b917746972cf" Selector="&lt;wnd app='chrome.exe' omit:cls='Chrome_WidgetWin_1' title='*| Catalog Task | ServiceNow - Google Chrome' /&gt;&lt;ctrl omit:name='*| Catalog Task | ServiceNow' role='document' /&gt;&lt;ctrl omit:name='Main Content' role='document' /&gt;&lt;ctrl omit:name='*| Catalog Task | ServiceNow' role='document' /&gt;&lt;ctrl omit:name='Catalog Task form section' role='pane' /&gt;&lt;ctrl name='State' role='combo box' text='*' /&gt;">
-                                  <ui:Target.TimeoutMS>
-                                    <InArgument x:TypeArguments="x:Int32" />
-                                  </ui:Target.TimeoutMS>
-                                  <ui:Target.WaitForReady>
-                                    <InArgument x:TypeArguments="ui:WaitForReady" />
-                                  </ui:Target.WaitForReady>
-                                </ui:Target>
-                              </ui:GetAttribute.Target>
-                            </ui:GetAttribute>
-                          </Sequence>
-                        </ui:CommentOut.Body>
-                        <sap:WorkflowViewStateService.ViewState>
-                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
-                            <x:Boolean x:Key="IsPinned">True</x:Boolean>
-                          </scg:Dictionary>
-                        </sap:WorkflowViewStateService.ViewState>
-                      </ui:CommentOut>
                       <If Condition="[status=statusRequestIt]" sap:VirtualizedContainerService.HintSize="468,268" sap2010:WorkflowViewState.IdRef="If_8">
                         <If.Then>
                           <Assign sap:VirtualizedContainerService.HintSize="434,84.66666666666667" sap2010:WorkflowViewState.IdRef="Assign_10">
@@ -3147,10 +3115,10 @@
         </ui:OpenBrowser>
       </TryCatch.Try>
       <TryCatch.Catches>
-        <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="1000.6666666666666,2641.3333333333335" sap2010:WorkflowViewState.IdRef="Catch`1_1">
+        <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="1000.6666666666666,3868" sap2010:WorkflowViewState.IdRef="Catch`1_1">
           <sap:WorkflowViewStateService.ViewState>
             <scg:Dictionary x:TypeArguments="x:String, x:Object">
-              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               <x:Boolean x:Key="IsPinned">False</x:Boolean>
             </scg:Dictionary>
           </sap:WorkflowViewStateService.ViewState>
@@ -3158,7 +3126,7 @@
             <ActivityAction.Argument>
               <DelegateInArgument x:TypeArguments="s:Exception" Name="exception" />
             </ActivityAction.Argument>
-            <Sequence sap:VirtualizedContainerService.HintSize="622,2571.3333333333335" sap2010:WorkflowViewState.IdRef="Sequence_39">
+            <Sequence sap:VirtualizedContainerService.HintSize="782.6666666666666,3798" sap2010:WorkflowViewState.IdRef="Sequence_39">
               <Sequence.Variables>
                 <Variable x:TypeArguments="ui:Window" Name="telaChrome" />
                 <Variable x:TypeArguments="x:Boolean" Name="chrome_window" />
@@ -3169,8 +3137,8 @@
                   <x:Boolean x:Key="IsPinned">False</x:Boolean>
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
-              <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="560,143.33333333333334" sap2010:WorkflowViewState.IdRef="LogMessage_6" Level="Error" Message="[&quot;Ocorreu erro na atualizacao de status&quot;+Environment.NewLine+exception.ToString]" />
-              <Sequence DisplayName="Print erro" sap:VirtualizedContainerService.HintSize="560,555.3333333333334" sap2010:WorkflowViewState.IdRef="Sequence_38">
+              <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="720.6666666666666,143.33333333333334" sap2010:WorkflowViewState.IdRef="LogMessage_6" Level="Error" Message="[&quot;Ocorreu erro na atualizacao de status&quot;+Environment.NewLine+exception.ToString]" />
+              <Sequence DisplayName="Print erro" sap:VirtualizedContainerService.HintSize="720.6666666666666,554" sap2010:WorkflowViewState.IdRef="Sequence_38">
                 <Sequence.Variables>
                   <Variable x:TypeArguments="x:String" Name="Print_Name" />
                   <Variable x:TypeArguments="x:String" Name="Print_Folder" />
@@ -3180,7 +3148,7 @@
                     <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
-                <Assign sap:VirtualizedContainerService.HintSize="434,84.66666666666667" sap2010:WorkflowViewState.IdRef="Assign_21">
+                <Assign sap:VirtualizedContainerService.HintSize="434,84" sap2010:WorkflowViewState.IdRef="Assign_21">
                   <Assign.To>
                     <OutArgument x:TypeArguments="x:String">[Print_Name]</OutArgument>
                   </Assign.To>
@@ -3188,7 +3156,7 @@
                     <InArgument x:TypeArguments="x:String">[System.DateTime.Now.ToString("yyyy MM dd_hh-mm-ss")+"_ErroAtualização.png"]</InArgument>
                   </Assign.Value>
                 </Assign>
-                <Assign sap:VirtualizedContainerService.HintSize="434,84.66666666666667" sap2010:WorkflowViewState.IdRef="Assign_22">
+                <Assign sap:VirtualizedContainerService.HintSize="434,84" sap2010:WorkflowViewState.IdRef="Assign_22">
                   <Assign.To>
                     <OutArgument x:TypeArguments="x:String">[Print_Folder]</OutArgument>
                   </Assign.To>
@@ -3198,8 +3166,8 @@
                 </Assign>
                 <d:TakeScreenshot FilePath="{x:Null}" sap:VirtualizedContainerService.HintSize="434,195.33333333333334" sap2010:WorkflowViewState.IdRef="TakeScreenshot_5" PrintScreen_Folder="[Print_Folder]" PrintScreen_Name="[Print_Name]" />
               </Sequence>
-              <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="560,143.33333333333334" sap2010:WorkflowViewState.IdRef="LogMessage_12" Level="Info" Message="[&quot;Fechar o chrome&quot;]" />
-              <ui:GetActiveWindow ApplicationWindow="[telaChrome]" DisplayName="Get Active Window" sap:VirtualizedContainerService.HintSize="560,260" sap2010:WorkflowViewState.IdRef="GetActiveWindow_1">
+              <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="720.6666666666666,143.33333333333334" sap2010:WorkflowViewState.IdRef="LogMessage_12" Level="Info" Message="[&quot;Fechar o chrome&quot;]" />
+              <ui:GetActiveWindow ApplicationWindow="[telaChrome]" DisplayName="Get Active Window" sap:VirtualizedContainerService.HintSize="720.6666666666666,260" sap2010:WorkflowViewState.IdRef="GetActiveWindow_1">
                 <ui:GetActiveWindow.Body>
                   <ActivityAction x:TypeArguments="x:Object">
                     <ActivityAction.Argument>
@@ -3216,7 +3184,7 @@
                   </ActivityAction>
                 </ui:GetActiveWindow.Body>
               </ui:GetActiveWindow>
-              <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="560,53.333333333333336" sap2010:WorkflowViewState.IdRef="CommentOut_6">
+              <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="720.6666666666666,53.333333333333336" sap2010:WorkflowViewState.IdRef="CommentOut_6">
                 <ui:CommentOut.Body>
                   <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="450,246" sap2010:WorkflowViewState.IdRef="Sequence_56">
                     <sap:WorkflowViewStateService.ViewState>
@@ -3234,68 +3202,145 @@
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
               </ui:CommentOut>
-              <ui:UiElementExists DisplayName="Element Exists 'chrome.exe SCTASK3108355'" Exists="[chrome_window]" sap:VirtualizedContainerService.HintSize="560,107.33333333333333" sap2010:WorkflowViewState.IdRef="UiElementExists_8">
-                <ui:UiElementExists.Target>
-                  <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="3accecc4-4474-4c68-b2a8-5e6096cfea72" InformativeScreenshot="e9b8b964e12021ade8a0fce50294158a" Selector="&lt;html app='chrome.exe' omit:title='SCTASK3108355 | Catalog Task | ServiceNow Service Management Sui*' /&gt;" TimeoutMS="1000">
-                    <ui:Target.WaitForReady>
-                      <InArgument x:TypeArguments="ui:WaitForReady" />
-                    </ui:Target.WaitForReady>
-                  </ui:Target>
-                </ui:UiElementExists.Target>
-              </ui:UiElementExists>
-              <If Condition="[chrome_window]" sap:VirtualizedContainerService.HintSize="560,958" sap2010:WorkflowViewState.IdRef="If_23">
-                <If.Then>
-                  <Sequence sap:VirtualizedContainerService.HintSize="526,774.6666666666666" sap2010:WorkflowViewState.IdRef="Sequence_63">
-                    <Sequence.Variables>
-                      <Variable x:TypeArguments="ui:Window" Name="cmd_Window" />
-                    </Sequence.Variables>
+              <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="720.6666666666666,1406.6666666666667" sap2010:WorkflowViewState.IdRef="CommentOut_42">
+                <ui:CommentOut.Body>
+                  <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="684,1326.6666666666667" sap2010:WorkflowViewState.IdRef="Sequence_129">
                     <sap:WorkflowViewStateService.ViewState>
                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
-                    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="484,143.33333333333334" sap2010:WorkflowViewState.IdRef="LogMessage_18" Level="Info" Message="[&quot;TASK KILL via CMD&quot;]" />
-                    <ui:OpenApplication Arguments="{x:Null}" TimeoutMS="{x:Null}" WorkingDirectory="{x:Null}" ApplicationWindow="[cmd_Window]" DisplayName="Open Application 'cmd.exe  Command Prompt'" FileName="C:\Windows\System32\cmd.exe" sap:VirtualizedContainerService.HintSize="484,504" sap2010:WorkflowViewState.IdRef="OpenApplication_6" InformativeScreenshot="cfde6330673046fcfb12642afbd9ec10" Selector="&lt;wnd app='cmd.exe' cls='ConsoleWindowClass' omit:title='C:\Windows\System32\cmd.exe' /&gt;">
-                      <ui:OpenApplication.Body>
-                        <ActivityAction x:TypeArguments="x:Object">
-                          <ActivityAction.Argument>
-                            <DelegateInArgument x:TypeArguments="x:Object" Name="ContextTarget" />
-                          </ActivityAction.Argument>
-                          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="450,356.6666666666667" sap2010:WorkflowViewState.IdRef="Sequence_62">
+                    <Sequence sap:VirtualizedContainerService.HintSize="622,1216" sap2010:WorkflowViewState.IdRef="Sequence_136">
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                      <ui:UiElementExists DisplayName="Element Exists 'chrome.exe SCTASK3108355'" Exists="[chrome_window]" sap:VirtualizedContainerService.HintSize="560,107.33333333333333" sap2010:WorkflowViewState.IdRef="UiElementExists_8">
+                        <ui:UiElementExists.Target>
+                          <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="3accecc4-4474-4c68-b2a8-5e6096cfea72" InformativeScreenshot="e9b8b964e12021ade8a0fce50294158a" Selector="&lt;html app='chrome.exe' omit:title='SCTASK3108355 | Catalog Task | ServiceNow Service Management Sui*' /&gt;" TimeoutMS="1000">
+                            <ui:Target.WaitForReady>
+                              <InArgument x:TypeArguments="ui:WaitForReady" />
+                            </ui:Target.WaitForReady>
+                          </ui:Target>
+                        </ui:UiElementExists.Target>
+                      </ui:UiElementExists>
+                      <If Condition="[chrome_window]" sap:VirtualizedContainerService.HintSize="560,958" sap2010:WorkflowViewState.IdRef="If_23">
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                        <If.Then>
+                          <Sequence sap:VirtualizedContainerService.HintSize="526,774.6666666666666" sap2010:WorkflowViewState.IdRef="Sequence_63">
+                            <Sequence.Variables>
+                              <Variable x:TypeArguments="ui:Window" Name="cmd_Window" />
+                            </Sequence.Variables>
                             <sap:WorkflowViewStateService.ViewState>
                               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                               </scg:Dictionary>
                             </sap:WorkflowViewStateService.ViewState>
-                            <ui:TypeInto ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" SimulateType="{x:Null}" Activate="True" AlterIfDisabled="True" DelayMS="2000" DisplayName="Type Into" sap:VirtualizedContainerService.HintSize="388,136.66666666666666" sap2010:WorkflowViewState.IdRef="TypeInto_14" Text="[&quot;taskkill /f /im chrome.exe&quot;+&quot;[k(enter)]&quot;]">
-                              <ui:TypeInto.Target>
-                                <ui:Target ClippingRegion="{x:Null}" Selector="{x:Null}" Element="[cmd_Window]" Id="b2a2e8cd-7d96-41dd-bdcf-0c70c13e4f4f">
-                                  <ui:Target.TimeoutMS>
-                                    <InArgument x:TypeArguments="x:Int32" />
-                                  </ui:Target.TimeoutMS>
-                                  <ui:Target.WaitForReady>
-                                    <InArgument x:TypeArguments="ui:WaitForReady" />
-                                  </ui:Target.WaitForReady>
-                                </ui:Target>
-                              </ui:TypeInto.Target>
-                            </ui:TypeInto>
-                            <ui:CloseWindow Selector="{x:Null}" TimeoutMS="{x:Null}" DisplayName="Close Window" sap:VirtualizedContainerService.HintSize="388,69.33333333333333" sap2010:WorkflowViewState.IdRef="CloseWindow_8" UseWindow="[cmd_Window]" WaitForReady="INTERACTIVE" />
+                            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="484,143.33333333333334" sap2010:WorkflowViewState.IdRef="LogMessage_18" Level="Info" Message="[&quot;TASK KILL via CMD&quot;]" />
+                            <ui:OpenApplication Arguments="{x:Null}" TimeoutMS="{x:Null}" WorkingDirectory="{x:Null}" ApplicationWindow="[cmd_Window]" DisplayName="Open Application 'cmd.exe  Command Prompt'" FileName="C:\Windows\System32\cmd.exe" sap:VirtualizedContainerService.HintSize="484,504" sap2010:WorkflowViewState.IdRef="OpenApplication_6" InformativeScreenshot="cfde6330673046fcfb12642afbd9ec10" Selector="&lt;wnd app='cmd.exe' cls='ConsoleWindowClass' omit:title='C:\Windows\System32\cmd.exe' /&gt;">
+                              <ui:OpenApplication.Body>
+                                <ActivityAction x:TypeArguments="x:Object">
+                                  <ActivityAction.Argument>
+                                    <DelegateInArgument x:TypeArguments="x:Object" Name="ContextTarget" />
+                                  </ActivityAction.Argument>
+                                  <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="450,356.6666666666667" sap2010:WorkflowViewState.IdRef="Sequence_62">
+                                    <sap:WorkflowViewStateService.ViewState>
+                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                      </scg:Dictionary>
+                                    </sap:WorkflowViewStateService.ViewState>
+                                    <ui:TypeInto ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" SimulateType="{x:Null}" Activate="True" AlterIfDisabled="True" DelayMS="2000" DisplayName="Type Into" sap:VirtualizedContainerService.HintSize="388,136.66666666666666" sap2010:WorkflowViewState.IdRef="TypeInto_14" Text="[&quot;taskkill /f /im chrome.exe&quot;+&quot;[k(enter)]&quot;]">
+                                      <ui:TypeInto.Target>
+                                        <ui:Target ClippingRegion="{x:Null}" Selector="{x:Null}" Element="[cmd_Window]" Id="b2a2e8cd-7d96-41dd-bdcf-0c70c13e4f4f">
+                                          <ui:Target.TimeoutMS>
+                                            <InArgument x:TypeArguments="x:Int32" />
+                                          </ui:Target.TimeoutMS>
+                                          <ui:Target.WaitForReady>
+                                            <InArgument x:TypeArguments="ui:WaitForReady" />
+                                          </ui:Target.WaitForReady>
+                                        </ui:Target>
+                                      </ui:TypeInto.Target>
+                                    </ui:TypeInto>
+                                    <ui:CloseWindow Selector="{x:Null}" TimeoutMS="{x:Null}" DisplayName="Close Window" sap:VirtualizedContainerService.HintSize="388,69.33333333333333" sap2010:WorkflowViewState.IdRef="CloseWindow_8" UseWindow="[cmd_Window]" WaitForReady="INTERACTIVE" />
+                                  </Sequence>
+                                </ActivityAction>
+                              </ui:OpenApplication.Body>
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                            </ui:OpenApplication>
                           </Sequence>
-                        </ActivityAction>
-                      </ui:OpenApplication.Body>
-                      <sap:WorkflowViewStateService.ViewState>
-                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
-                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                        </scg:Dictionary>
-                      </sap:WorkflowViewStateService.ViewState>
-                    </ui:OpenApplication>
+                        </If.Then>
+                        <If.Else>
+                          <Sequence DisplayName="" sap:VirtualizedContainerService.HintSize="300,80.66666666666667" sap2010:WorkflowViewState.IdRef="Sequence_109">
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                          </Sequence>
+                        </If.Else>
+                      </If>
+                    </Sequence>
                   </Sequence>
-                </If.Then>
-                <If.Else>
-                  <Sequence DisplayName="" sap2010:WorkflowViewState.IdRef="Sequence_109" />
-                </If.Else>
-              </If>
+                </ui:CommentOut.Body>
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+              </ui:CommentOut>
+              <Sequence sap2010:Annotation.AnnotationText="[FIX] 18/02/2025: Tratativa para erro de navegador" sap:VirtualizedContainerService.HintSize="720.6666666666666,886.6666666666666" sap2010:WorkflowViewState.IdRef="Sequence_133">
+                <Sequence.Variables>
+                  <Variable x:TypeArguments="x:Boolean" Name="cmd_Window" />
+                </Sequence.Variables>
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+                <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="484,143.33333333333334" sap2010:WorkflowViewState.IdRef="LogMessage_29" Level="Info" Message="[&quot;TASK KILL via CMD&quot;]" />
+                <ui:OpenApplication ApplicationWindow="{x:Null}" Arguments="{x:Null}" TimeoutMS="{x:Null}" WorkingDirectory="{x:Null}" DisplayName="Open Application 'cmd.exe  Command Prompt'" FileName="C:\Windows\System32\cmd.exe" sap:VirtualizedContainerService.HintSize="484,562" sap2010:WorkflowViewState.IdRef="OpenApplication_9" InformativeScreenshot="72c455e855109ddb5dc0fb527fd846c1" Selector="&lt;wnd app='cmd.exe' cls='ConsoleWindowClass' omit:title='Command Prompt' /&gt;">
+                  <ui:OpenApplication.Body>
+                    <ActivityAction x:TypeArguments="x:Object">
+                      <ActivityAction.Argument>
+                        <DelegateInArgument x:TypeArguments="x:Object" Name="ContextTarget" />
+                      </ActivityAction.Argument>
+                      <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="450,414.6666666666667" sap2010:WorkflowViewState.IdRef="Sequence_137">
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                        <ui:TypeInto ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" SimulateType="{x:Null}" Activate="True" AlterIfDisabled="True" DelayMS="2000" DisplayName="Type Into 'cmd.exe  Command Prompt'" sap:VirtualizedContainerService.HintSize="388,156.66666666666666" sap2010:WorkflowViewState.IdRef="TypeInto_26" Text="[&quot;taskkill /f /im chrome.exe&quot;+&quot;[k(enter)]&quot;]">
+                          <ui:TypeInto.Target>
+                            <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Selector="{x:Null}" Id="cb18fc04-7832-4879-af86-44a1e49333d7" InformativeScreenshot="34e07a191cd2a019f1baddf43a9eebbe">
+                              <ui:Target.TimeoutMS>
+                                <InArgument x:TypeArguments="x:Int32" />
+                              </ui:Target.TimeoutMS>
+                              <ui:Target.WaitForReady>
+                                <InArgument x:TypeArguments="ui:WaitForReady" />
+                              </ui:Target.WaitForReady>
+                            </ui:Target>
+                          </ui:TypeInto.Target>
+                        </ui:TypeInto>
+                        <ui:CloseWindow Selector="{x:Null}" TimeoutMS="{x:Null}" UseWindow="{x:Null}" DisplayName="Close Window 'cmd.exe  Command Prompt'" sap:VirtualizedContainerService.HintSize="388,107.33333333333333" sap2010:WorkflowViewState.IdRef="CloseWindow_11" InformativeScreenshot="72c455e855109ddb5dc0fb527fd846c1" WaitForReady="INTERACTIVE" />
+                      </Sequence>
+                    </ActivityAction>
+                  </ui:OpenApplication.Body>
+                </ui:OpenApplication>
+              </Sequence>
             </Sequence>
           </ActivityAction>
         </Catch>
